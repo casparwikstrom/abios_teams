@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MyTable from "./components/Table";
+import ReactDOM from 'react-dom';
+import {Table} from 'react-virtualized';
+import Banner from "./components/Banner";
+import 'react-virtualized/styles.css'; // only needs to be imported once
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import MainNavbar from "./components/MainNavbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <MainNavbar></MainNavbar>,
+        <Banner></Banner>
+        <div className="container">
+            <Router>
+                <Link to='/team/'></Link>
+                <Switch>
+                    <Route path='/team/:id'>
+                        <h1>this is team</h1>
+                    </Route>
+                    <Route path="/">
+                        <Table/>
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
     </div>
   );
 }
