@@ -5,29 +5,37 @@ import 'react-virtualized/styles.css'; // only needs to be imported once
 import "../assets/styling/Table.css"
 
 
-// List data as an array of strings
-const list = [
 
-    // And so on...
-];
+/*
 
+"team_id": 1,
+    "team_name": "team 1",
+    "status": "qualified",
+    "dcp": 3000
+*/
 
 
 
 function MyTable(props) {
 /*console.log("props", props)*/
+
     const row = ({index}) => props.teams[index];
 
     return (
         <Table
+            gridStyle={"100%"}
+            {...props}
+            sort={props.teams}
             width={300}
             height={300}
             headerHeight={20}
             rowHeight={30}
-            rowCount={list.length}
+            rowCount={props.teams.length}
             rowGetter={row}>
-            <Column label="Name" dataKey="name" width={100} />
-            <Column width={150} label="Description" dataKey="description" />
+            <Column width={150} label="logo" dataKey="logo" />
+            <Column width={100} label="Name" dataKey="name" />
+            <Column width={150} label="Description" dataKey="status" />
+            <Column width={150} label="Description" dataKey="dcp" />
         </Table>
     );
 }
