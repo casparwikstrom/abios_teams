@@ -1,90 +1,5 @@
 function toTeam(data) {
 
-    /*const teams = [
-        {
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },{
-            team_id: 1,
-            team_name: "team 1",
-            status: "qualified",
-            dcp: 3000
-        },
-
-
-    ];*/
     const teams = {
         name: data.team_name,
         id: data.team_id,
@@ -98,6 +13,28 @@ console.log("teams",teams)
     };
 
     return teams;
+}
+
+function toRoster(data) {
+    const teams = {
+        name: data.team_name,
+        id: data.team_id,
+    }
+
+
+    const matches = {
+        data: data,
+    };
+
+    return teams;
+}
+
+export function fetchRoster() {
+    return fetch("https://raw.githubusercontent.com/casparwikstrom/abios_teams/table/public/mock_teams.json")
+        .then(response => response.json())
+        .then(jsonArray => jsonArray.map(data => {
+            return toTeam(data);
+        }))
 }
 
 export async function dataFetch() {

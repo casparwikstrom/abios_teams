@@ -6,8 +6,10 @@ import {MyLoader} from "./MyLoader";
 import Banner from "./Banner";
 import Team from "./Team";
 import {dataFetch} from "../api/DataFetch";
+import Container from '@material-ui/core/Container';
 
 function Home() {
+
     const location = useLocation();
     const [teams, setData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -21,18 +23,13 @@ function Home() {
     }, []);
 
     if (loading == true) {
-        return <MyLoader></MyLoader>
+        return <MyLoader/>
     } else {
         return (
-            <Switch>
-                <Route path='/team/:id' component={Team}>
-                    <h2>hello team</h2>
-                </Route>
-                <Route path="/">
-                    <Banner/>
-                    <MyTable teams={teams}/>
-                </Route>
-            </Switch>
+            <Banner/>,
+                <Container fixed>
+                    <MyTable teams={teams} style={{height: "1200px" || '100%', minWidth: "20vw"}}/>
+                </Container>
         );
     }
 }
