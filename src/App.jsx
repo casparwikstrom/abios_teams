@@ -17,6 +17,7 @@ function App() {
                     <Route path='/team/:id' component={Team}>
                     </Route>
                     <Route path="/">
+                        <Banner/>
                         <Home/>
                     </Route>
                 </Switch>
