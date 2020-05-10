@@ -1,33 +1,28 @@
 import React from 'react';
 import './App.css';
-import MyTable from "./components/Table";
-import ReactDOM from 'react-dom';
-import {Table} from 'react-virtualized';
+import MyTable from "./components/MyTable";
 import Banner from "./components/Banner";
 import 'react-virtualized/styles.css'; // only needs to be imported once
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import MainNavbar from "./components/MainNavbar";
+import Home from "./components/Home";
+import Team from "./components/Team";
 
 function App() {
-  return (
-    <div className="App">
-        <MainNavbar></MainNavbar>,
-        <Banner></Banner>
-        <div className="container">
+    return (
+        <div className="App">
+            <MainNavbar/>
             <Router>
-                <Link to='/team/'></Link>
                 <Switch>
-                    <Route path='/team/:id'>
-                        <h1>this is team</h1>
+                    <Route path='/team/:id' component={Team}>
                     </Route>
                     <Route path="/">
-                        <Table/>
+                        <Home/>
                     </Route>
                 </Switch>
             </Router>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;

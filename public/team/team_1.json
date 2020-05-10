@@ -1,0 +1,244 @@
+{
+  "team_id": 1,
+  "team_name": "team 1",
+  "status": "qualified",
+  "dcp": 6000,
+  "img": "https://img.abiosgaming.com/competitors/virtus-pro-vp-oldnt-logo.png",
+  "roster": [
+    {
+      "nick_name": "9pasha",
+      "deleted_at": null,
+      "id": 7645,
+      "active": true,
+      "first_name": "Pavel",
+      "last_name": "Khvastunov",
+      "images": {
+        "default": "https://img.abiosgaming.com/competitors/9pasha-player-picture.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/9pasha-player-picture.png",
+        "fallback": false
+      },
+      "roles": [
+        {
+          "name": "3",
+          "from": "2013-03-14",
+          "to": null
+        }
+      ],
+      "country": {
+        "name": "Russia",
+        "short_name": "RU",
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "region": {
+          "id": 1,
+          "name": "Europe",
+          "short_name": "EU"
+        }
+      },
+      "race": null,
+      "social_media_accounts": [
+        {
+          "name": "Twitter",
+          "slug": "twitter",
+          "url": "https://twitter.com/9pashka"
+        },
+        {
+          "name": "Twitch",
+          "slug": "twitch",
+          "url": "https://www.twitch.tv/9pasha"
+        }
+      ]
+    },
+    {
+      "nick_name": "No[o]ne",
+      "deleted_at": null,
+      "id": 7646,
+      "active": true,
+      "first_name": "Vladimir",
+      "last_name": "Minenko",
+      "images": {
+        "default": "https://img.abiosgaming.com/competitors/noone-dota2-ukr-vladimir-minenko.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/noone-dota2-ukr-vladimir-minenko.png",
+        "fallback": false
+      },
+      "roles": [
+        {
+          "name": "2",
+          "from": "2013-03-14",
+          "to": null
+        }
+      ],
+      "country": {
+        "name": "Ukraine",
+        "short_name": "UA",
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Ukraine.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Ukraine.png"
+        },
+        "region": {
+          "id": 1,
+          "name": "Europe",
+          "short_name": "EU"
+        }
+      },
+      "race": null,
+      "social_media_accounts": [
+        {
+          "name": "Twitter",
+          "slug": "twitter",
+          "url": "https://twitter.com/Noone_dota"
+        },
+        {
+          "name": "Twitch",
+          "slug": "twitch",
+          "url": "https://www.twitch.tv/nooneboss"
+        }
+      ]
+    },
+    {
+      "nick_name": "Solo",
+      "deleted_at": null,
+      "id": 7648,
+      "active": true,
+      "first_name": "Alexei",
+      "last_name": "Berezin",
+      "images": {
+        "default": "https://img.abiosgaming.com/competitors/solo-dota2-RUS-alexei-berezin.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/solo-dota2-RUS-alexei-berezin.png",
+        "fallback": false
+      },
+      "roles": [
+        {
+          "name": "5",
+          "from": "2013-03-14",
+          "to": null
+        }
+      ],
+      "country": {
+        "name": "Russia",
+        "short_name": "RU",
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "region": {
+          "id": 1,
+          "name": "Europe",
+          "short_name": "EU"
+        }
+      },
+      "race": null,
+      "social_media_accounts": [
+        {
+          "name": "Twitter",
+          "slug": "twitter",
+          "url": "https://twitter.com/dotaSolo"
+        },
+        {
+          "name": "Twitch",
+          "slug": "twitch",
+          "url": "https://www.twitch.tv/sololineabuse"
+        }
+      ]
+    },
+    {
+      "nick_name": "RAMZES666",
+      "deleted_at": null,
+      "id": 10730,
+      "active": true,
+      "first_name": "Roman",
+      "last_name": "Kushnarev",
+      "images": {
+        "default": "https://img.abiosgaming.com/competitors/ramzes666-dota2-RUS-roman-kushnarev.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/ramzes666-dota2-RUS-roman-kushnarev.png",
+        "fallback": false
+      },
+      "roles": [
+        {
+          "name": "1",
+          "from": "2013-03-14",
+          "to": null
+        }
+      ],
+      "country": {
+        "name": "Russia",
+        "short_name": "RU",
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "region": {
+          "id": 1,
+          "name": "Europe",
+          "short_name": "EU"
+        }
+      },
+      "race": null,
+      "social_media_accounts": [
+        {
+          "name": "Twitter",
+          "slug": "twitter",
+          "url": "https://twitter.com/ramzesdoto"
+        },
+        {
+          "name": "Twitch",
+          "slug": "twitch",
+          "url": "https://www.twitch.tv/ramzesdoto"
+        }
+      ]
+    },
+    {
+      "nick_name": "RodjER",
+      "deleted_at": null,
+      "id": 23588,
+      "active": true,
+      "first_name": "Vladimir",
+      "last_name": "Nikogosyan",
+      "images": {
+        "default": "https://img.abiosgaming.com/competitors/rodjer-dota2-RUS-vladimir-nikogosyan.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/rodjer-dota2-RUS-vladimir-nikogosyan.png",
+        "fallback": false
+      },
+      "roles": [
+        {
+          "name": "4",
+          "from": "2018-03-08",
+          "to": null
+        },
+        {
+          "name": "5",
+          "from": "2013-03-14",
+          "to": "2018-03-07"
+        }
+      ],
+      "country": {
+        "name": "Russia",
+        "short_name": "RU",
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "region": {
+          "id": 1,
+          "name": "Europe",
+          "short_name": "EU"
+        }
+      },
+      "race": null,
+      "social_media_accounts": [
+        {
+          "name": "Twitter",
+          "slug": "twitter",
+          "url": "https://twitter.com/rodjerdota"
+        },
+        {
+          "name": "Twitch",
+          "slug": "twitch",
+          "url": "https://www.twitch.tv/rodjer"
+        }
+      ]
+    }
+  ]
+}
