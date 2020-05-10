@@ -1,0 +1,500 @@
+{
+  "team_data": [
+    {
+      "coach": null,
+      "name": "Team Secret",
+      "active": true,
+      "deleted_at": null,
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/Team-Secret.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png"
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/teamsecret"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/TeamSecret"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/teamsecret"
+        }
+      ],
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/European-Union.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/European-Union.png"
+        },
+        "name": "European Union",
+        "short_name": "EU",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "id": 1462,
+      "short_name": "Secret"
+    }
+  ],
+  "players": [
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Estonia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Estonia.png"
+        },
+        "name": "Estonia",
+        "short_name": "EE",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/clementinator"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/OfficialPuppey"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/puppey"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "5",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Clement",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/casters/puppey-dota2-EST-Clement-Ivanov.png",
+        "thumbnail": "https://img.abiosgaming.com/casters/thumbnails/puppey-dota2-EST-Clement-Ivanov.png"
+      },
+      "race": null,
+      "last_name": "Ivanov",
+      "id": 7598,
+      "nick_name": "Puppey"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Jordan.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Jordan.png"
+        },
+        "name": "Jordan",
+        "short_name": "JO",
+        "region": {
+          "name": "Western Asia",
+          "id": 7,
+          "short_name": "WA"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/YapzOrdota"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/YapzOrdota"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/yapzordota"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "4",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Yazied",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/casters/Yapzor-dota2-JOR-Yazied-Jaradat.png",
+        "thumbnail": "https://img.abiosgaming.com/casters/thumbnails/Yapzor-dota2-JOR-Yazied-Jaradat.png"
+      },
+      "race": null,
+      "last_name": "Jaradat",
+      "id": 8571,
+      "nick_name": "YapzOr"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Sweden.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Sweden.png"
+        },
+        "name": "Sweden",
+        "short_name": "SE",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/zai_2002"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/zai"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2018-09-11",
+          "name": "3",
+          "to": null
+        },
+        {
+          "from": "2018-03-08",
+          "name": "3/4",
+          "to": "2018-09-11"
+        },
+        {
+          "from": "2017-09-05",
+          "name": "3",
+          "to": "2018-03-07"
+        },
+        {
+          "from": "2016-09-15",
+          "name": "4/5",
+          "to": "2017-08-30"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Ludwig",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/Zai-player-picture.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/Zai-player-picture.png"
+      },
+      "race": null,
+      "last_name": "W\u00e5hlberg",
+      "id": 11389,
+      "nick_name": "zai"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Malaysia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Malaysia.png"
+        },
+        "name": "Malaysia",
+        "short_name": "MY",
+        "region": {
+          "name": "South East Asia",
+          "id": 9,
+          "short_name": "SEA"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/midonedota2"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/miduandota2"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/midone"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2016-08-27",
+          "name": "1/2",
+          "to": null
+        },
+        {
+          "from": "2013-03-14",
+          "name": "2",
+          "to": "2016-08-27"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Yeik",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/casters/MidOne-dota2-Malaysia-Yeik-Nai-Zheng.png",
+        "thumbnail": "https://img.abiosgaming.com/casters/thumbnails/MidOne-dota2-Malaysia-Yeik-Nai-Zheng.png"
+      },
+      "race": null,
+      "last_name": "Nai Zheng",
+      "id": 13030,
+      "nick_name": "MidOne"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Poland.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Poland.png"
+        },
+        "name": "Poland",
+        "short_name": "PL",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/nishadota"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/nishadota"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2018-09-11",
+          "name": "1/2",
+          "to": null
+        },
+        {
+          "from": "2013-03-14",
+          "name": "2",
+          "to": "2018-09-11"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Micha\u0142",
+      "images": {
+        "fallback": true,
+        "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png",
+        "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"
+      },
+      "race": null,
+      "last_name": "Jankowski",
+      "id": 13383,
+      "nick_name": "Nisha"
+    }
+  ],
+  "team_id": 42708,
+  "upcoming_matches": [
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "Virtus.pro",
+      "date": "2022-03-23 16:43:17",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/virtus-pro-vp-oldnt-logo.png",
+      "id": 189344,
+      "opponent_id": 33618,
+      "team_score": -1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "Keen Gaming",
+      "date": "2022-03-23 13:30:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/keen-gaming-logo.png",
+      "id": 189345,
+      "opponent_id": 44016,
+      "team_score": -1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "J.Storm",
+      "date": "2022-03-20 12:30:16",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/jstorm-j-storm-logo.png",
+      "id": 189347,
+      "opponent_id": 46162,
+      "team_score": -1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "Infamous",
+      "date": "2022-03-18 15:31:29",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/INfamous-logo-new.png",
+      "id": 189350,
+      "opponent_id": 49253,
+      "team_score": -1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "Vici Gaming",
+      "date": "2022-03-16 17:57:34",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Vici-gaming-2017.png",
+      "id": 189340,
+      "opponent_id": 42642,
+      "team_score": -1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "Team Liquid",
+      "date": "2022-03-15 12:33:00",
+      "opponent_logo": "https://img.abiosgaming.com/events/thumbnails/Team-Liquid-2017-logo.png",
+      "id": 189317,
+      "opponent_id": 15926,
+      "team_score": -1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": -1,
+      "team_id": 42708,
+      "opponent_name": "Keen Gaming",
+      "date": "2022-03-14 12:30:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/keen-gaming-logo.png",
+      "id": 189315,
+      "opponent_id": 44016,
+      "team_score": -1
+    }
+  ],
+  "past_matches": [
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 1,
+      "team_id": 42708,
+      "opponent_name": "Virtus.pro",
+      "date": "2019-01-27 08:51:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/virtus-pro-vp-oldnt-logo.png",
+      "id": 182737,
+      "opponent_id": 33618,
+      "team_score": 3
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 0,
+      "team_id": 42708,
+      "opponent_name": "Evil Geniuses",
+      "date": "2019-01-27 04:16:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Evil-Geniuses-EG.png",
+      "id": 182735,
+      "opponent_id": 37949,
+      "team_score": 2
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 2,
+      "team_id": 42708,
+      "opponent_name": "Virtus.pro",
+      "date": "2019-01-25 11:32:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/virtus-pro-vp-oldnt-logo.png",
+      "id": 182732,
+      "opponent_id": 33618,
+      "team_score": 1
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 0,
+      "team_id": 42708,
+      "opponent_name": "EHOME",
+      "date": "2019-01-22 10:40:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
+      "id": 182734,
+      "opponent_id": 42819,
+      "team_score": 2
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 0,
+      "team_id": 42708,
+      "opponent_name": "Team Liquid",
+      "date": "2019-01-21 02:00:00",
+      "opponent_logo": "https://img.abiosgaming.com/events/thumbnails/Team-Liquid-2017-logo.png",
+      "id": 182738,
+      "opponent_id": 15926,
+      "team_score": 2
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 1,
+      "team_id": 42708,
+      "opponent_name": "Forward Gaming ",
+      "date": "2019-01-19 09:38:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Forward-gaming.png",
+      "id": 182720,
+      "opponent_id": 42882,
+      "team_score": 2
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 2,
+      "team_id": 42708,
+      "opponent_name": "PSG.LGD",
+      "date": "2019-01-19 05:30:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/LGD-PSG-LOGO.png",
+      "id": 182717,
+      "opponent_id": 32674,
+      "team_score": 0
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 0,
+      "team_id": 42708,
+      "opponent_name": "Thunder Predator",
+      "date": "2019-01-19 02:00:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/ThunderPredator-teamlogo.png",
+      "id": 182718,
+      "opponent_id": 46712,
+      "team_score": 2
+    },
+    {
+      "team_name": "Team Secret",
+      "opponent_score": 1,
+      "team_id": 42708,
+      "opponent_name": "Team Liquid",
+      "date": "2018-11-30 14:07:00",
+      "opponent_logo": "https://img.abiosgaming.com/events/thumbnails/Team-Liquid-2017-logo.png",
+      "id": 178941,
+      "opponent_id": 15926,
+      "team_score": 2
+    }
+  ]
+}
