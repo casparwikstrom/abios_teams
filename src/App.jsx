@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import MyTable from "./components/MyTable";
 import Banner from "./components/Banner";
 import 'react-virtualized/styles.css'; // only needs to be imported once
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import MainNavbar from "./components/MainNavbar";
-import Home from "./components/Home";
-import Team from "./components/Team";
+import ResultsPage from "./components/results/ResultsPage";
+import TeamPage from "./components/teams/TeamPage";
 
 function App() {
     return (
@@ -14,11 +13,11 @@ function App() {
             <MainNavbar/>
             <Router>
                 <Switch>
-                    <Route path='/team/:id' component={Team}>
+                    <Route path='/team/:id' component={TeamPage}>
                     </Route>
                     <Route path="/">
                         <Banner/>
-                        <Home/>
+                        <ResultsPage/>
                     </Route>
                 </Switch>
             </Router>
