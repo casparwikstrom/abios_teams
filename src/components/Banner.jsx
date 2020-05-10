@@ -32,9 +32,9 @@ function Banner() {
 
     return (
         <Thing>
-                <div className="banner" style={sectionStyle}>
-                    <h1>This is banner</h1>
-                </div>
+            <div className="banner" style={sectionStyle}>
+                <h1>This is banner</h1>
+            </div>
         </Thing>
     );
 }

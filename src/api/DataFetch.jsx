@@ -7,7 +7,7 @@ function toTeam(data) {
         dcp: data.dcp,
         logo: data.img
     }
-console.log("teams",teams)
+
     const matches = {
         data: data,
     };
@@ -16,25 +16,20 @@ console.log("teams",teams)
 }
 
 function toRoster(data) {
-    const teams = {
-        name: data.team_name,
-        id: data.team_id,
+    console.log("data", data)
+    const team = {
+        name: data
     }
-
-
-    const matches = {
-        data: data,
-    };
-
-    return teams;
+    return team;
 }
 
-export function fetchRoster() {
-    return fetch("https://raw.githubusercontent.com/casparwikstrom/abios_teams/table/public/mock_teams.json")
+export function fetchRoster(id) {
+    let url = "https://raw.githubusercontent.com/casparwikstrom/abios_teams/master/public/team/team_"+id+".json"
+    return fetch(url)
         .then(response => response.json())
-        .then(jsonArray => jsonArray.map(data => {
-            return toTeam(data);
-        }))
+        .then(data => {
+            return toRoster(data);
+        });
 }
 
 export async function dataFetch() {
