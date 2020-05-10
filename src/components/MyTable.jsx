@@ -16,18 +16,18 @@ const useStyles = makeStyles({
     },
 });
 
-/*{
-    "team_id": 7,
-    "team_name": "team 1",
-    "status": "qualified",
-    "dcp": 3000,
-    "img": "https://img.abiosgaming.com/competitors/virtus-pro-vp-oldnt-logo.png"
-}*/
-
+/*name*/
+/*id*/
+/*status*/
+/*dcp*/
+/*logo*/
 
 
 export default function SimpleTable(props) {
     const classes = useStyles();
+
+    console.log("propss in mytable", props)
+
 
     return (
         <TableContainer component={Paper}>
@@ -43,14 +43,13 @@ export default function SimpleTable(props) {
                 </TableHead>
                 <TableBody>
                     {props.teams.map((row) => (
-                        <TableRow key={props.teams.id}>
+                        <TableRow key={row.id}>
                             <TableCell component="th" scope="row">
-                                {props.teams.team_name}
+                                <img src={row.logo} alt=""/>
                             </TableCell>
-                            <TableCell align="right">{props.teams.img}</TableCell>
-                            <TableCell align="right">{props.teams.team_name}</TableCell>
-                            <TableCell align="right">{props.teams.status}</TableCell>
-                            <TableCell align="right">{props.teams.dcp}</TableCell>
+                            <TableCell align="right">{row.name}</TableCell>
+                            <TableCell align="right">{row.status}</TableCell>
+                            <TableCell align="right">{row.dcp}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
