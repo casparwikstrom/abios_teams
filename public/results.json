@@ -1,0 +1,202 @@
+[
+  {
+    "dpc": 3992,
+    "status": "SECURED_INVITE",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
+    "team_id": 42819,
+    "rank": 1,
+    "team_name": "EHOME"
+  },
+  {
+    "dpc": 3928,
+    "status": "SECURED_INVITE",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Chaos-Esports-Club-US.png",
+    "team_id": 46961,
+    "rank": 2,
+    "team_name": "Chaos Esports Club "
+  },
+  {
+    "dpc": 3882,
+    "status": "SECURED_INVITE",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/virtus-pro-vp-oldnt-logo.png",
+    "team_id": 33618,
+    "rank": 3,
+    "team_name": "Virtus.pro"
+  },
+  {
+    "dpc": 3642,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Natus-Vincere-Navi-new-logo.png",
+    "team_id": 42644,
+    "rank": 4,
+    "team_name": "Natus Vincere"
+  },
+  {
+    "dpc": 3604,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/LGD-PSG-LOGO.png",
+    "team_id": 32674,
+    "rank": 5,
+    "team_name": "PSG.LGD"
+  },
+  {
+    "dpc": 3324,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Fnatic-logo.png",
+    "team_id": 42895,
+    "rank": 6,
+    "team_name": "Fnatic"
+  },
+  {
+    "dpc": 3294,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Wings-Gaming-new.png",
+    "team_id": 198,
+    "rank": 7,
+    "team_name": "Wings Gaming"
+  },
+  {
+    "dpc": 3164,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/The-Alliance-v2.png",
+    "team_id": 38228,
+    "rank": 8,
+    "team_name": "The Alliance"
+  },
+  {
+    "dpc": 3128,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/the-pango-logo.png",
+    "team_id": 47066,
+    "rank": 9,
+    "team_name": "The Pango"
+  },
+  {
+    "dpc": 3114,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Evil-Geniuses-EG.png",
+    "team_id": 37949,
+    "rank": 10,
+    "team_name": "Evil Geniuses"
+  },
+  {
+    "dpc": 2954,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/INfamous-logo-new.png",
+    "team_id": 49253,
+    "rank": 11,
+    "team_name": "Infamous"
+  },
+  {
+    "dpc": 2790,
+    "status": "QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Mineski-clean-logo-new.png",
+    "team_id": 47571,
+    "rank": 12,
+    "team_name": "Mineski"
+  },
+  {
+    "dpc": 2742,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Team-complexity-new.png",
+    "team_id": 45455,
+    "rank": 13,
+    "team_name": "compLexity"
+  },
+  {
+    "dpc": 2738,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png",
+    "team_id": 42708,
+    "rank": 14,
+    "team_name": "Team Secret"
+  },
+  {
+    "dpc": 2540,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Vici-gaming-2017.png",
+    "team_id": 42642,
+    "rank": 15,
+    "team_name": "Vici Gaming"
+  },
+  {
+    "dpc": 2532,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Ninjas-In-Pyjamas-NIP-Logo-New.png",
+    "team_id": 43081,
+    "rank": 16,
+    "team_name": "Ninjas In Pyjamas"
+  },
+  {
+    "dpc": 2278,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Forward-gaming.png",
+    "team_id": 42882,
+    "rank": 17,
+    "team_name": "Forward Gaming "
+  },
+  {
+    "dpc": 2212,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/events/thumbnails/Team-Liquid-2017-logo.png",
+    "team_id": 15926,
+    "rank": 18,
+    "team_name": "Team Liquid"
+  },
+  {
+    "dpc": 2120,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/jstorm-j-storm-logo.png",
+    "team_id": 46162,
+    "rank": 19,
+    "team_name": "J.Storm"
+  },
+  {
+    "dpc": 2114,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/keen-gaming-logo.png",
+    "team_id": 44016,
+    "rank": 20,
+    "team_name": "Keen Gaming"
+  },
+  {
+    "dpc": 1852,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png",
+    "team_id": 45384,
+    "rank": 21,
+    "team_name": "Plus Ultra"
+  },
+  {
+    "dpc": 1846,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/ThunderPredator-teamlogo.png",
+    "team_id": 46712,
+    "rank": 22,
+    "team_name": "Thunder Predator"
+  },
+  {
+    "dpc": 1822,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/The_Final_Tribe_Logo.png",
+    "team_id": 42546,
+    "rank": 23,
+    "team_name": "The Final Tribe"
+  },
+  {
+    "dpc": 1688,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/TNC-pro-team-new-logo.png",
+    "team_id": 45953,
+    "rank": 24,
+    "team_name": "TNC Predator"
+  },
+  {
+    "dpc": 1502,
+    "status": "NOT_QUALIFIED",
+    "team_lgo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Aster-logo-new.png",
+    "team_id": 44735,
+    "rank": 25,
+    "team_name": "Team Aster"
+  }
+]

@@ -9,7 +9,6 @@ import {dataFetch} from "../api/DataFetch";
 import Container from '@material-ui/core/Container';
 
 function Home() {
-
     const location = useLocation();
     const [teams, setData] = useState([]);
     const [loading, setLoading] = useState(true);
