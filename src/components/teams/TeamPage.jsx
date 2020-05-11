@@ -1,38 +1,51 @@
 import React, {useEffect, useState} from "react";
-import {useHistory} from 'react-router-dom';
 import {useParams} from 'react-router';
-import {useLocation} from 'react-router-dom';
 import Banner from "../Banner";
 import {fetchRoster} from "../../api/teams/TeamFetch";
-
+import {MyLoader} from "../MyLoader";
+import Container from "@material-ui/core/Container";
+import LabTabs from "./LabTabs";
+/*
+import {useHistory} from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
+import RosterTable from "./RosterTable";
+import {resultsFetch} from "../../api/results/ResultsFetch";
+import SimpleTable from "../results/ResultsTable";
+*/
 
 function TeamPage() {
-    const history = useHistory();
-    const location = useLocation();
+    /*const history = useHistory();
+    const location = useLocation();*/
     const {id} = useParams();
-    const [team, setTeam] = useState([]);
-    const [teamId, setID] = useState({id});
-    const [error, setError] = useState(null);
+    /*TODO*/
+    /*const [error, setError] = useState(null);*/
     const [loading, setLoading] = useState(true);
-    console.log("ididid", teamId)
+    const [teamId, setID] = useState({id});
+    const [team, setTeam] = useState([]);
+    const [roster, setRoster] = useState({});
+    const [matches, setMatches] = useState({});
 
     useEffect(() => {
         let team = fetchRoster(id);
         team.then(
             (result) => {
                 setTeam(result);
-            },
-            (error) => {
+                setID(id);
+                setRoster(result.roster);
+                setMatches(result.matches);
                 setLoading(false);
-                setError(error);
             })
     }, []);
 
-
     return (
-        <div className="Wrapper">
+        <div>
             <Banner/>
+            {loading && <MyLoader/>}
+            {!loading && <Container fixed>
+                <LabTabs roster={roster} matches={matches}/>
+            </Container>}
         </div>
+
     );
 }
 

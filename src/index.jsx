@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'react-virtualized/styles.css'; // only needs to be imported once
 import {BrowserRouter as Router} from 'react-router-dom';
+/*import {StateInspector, useState, useReducer} from "reinspect";*/
 
 
 ReactDOM.render(

@@ -16,7 +16,6 @@ function App() {
                     <Route path='/team/:id' component={TeamPage}>
                     </Route>
                     <Route path="/">
-                        <Banner/>
                         <ResultsPage/>
                     </Route>
                 </Switch>

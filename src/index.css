@@ -16,3 +16,6 @@ code {
 * {
   border: 1px solid red;
 }
+img{
+  height: 80px!important;
+}
