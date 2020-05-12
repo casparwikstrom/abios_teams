@@ -1,26 +1,26 @@
 import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
 import React, {useState} from "react";
+import {ConvertRole} from "./Convertions";
 
 
 export default function RosterRow(props) {
     const player = props.player;
-    /*const [roles, setRoles] = useState([]);*/
 
     return (
         <TableRow key={player.id}>
             <TableCell component="th" scope="row">
                 {player.nick_name}
             </TableCell>
-            <TableCell>
+            <TableCell align="left">
                 <img src={player.images.default} alt=""/>
             </TableCell>
-            <TableCell>
+            <TableCell align="center">
                 {player.first_name} {player.last_name}
             </TableCell>
-            <TableCell>
+            <TableCell align="center">
                 {player.roles.map((role) => {
-                    return <div key={role.name}>{role.name} </div>;
+                    return <div key={role.name}>{ConvertRole(role.name)} </div>;
                 })}
             </TableCell>
         </TableRow>

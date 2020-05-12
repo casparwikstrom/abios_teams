@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -8,9 +8,10 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import RosterTable from "./RosterTable";
 import MatchesTable from "./MatchesTable";
+import PastMatchesTable from "./PastMatchesTable";
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const {children, value, index, ...other} = props;
 
     return (
         <div
@@ -53,8 +54,9 @@ export default function SimpleTabs(props) {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const roster = props;
-    const matches = props.matches;
-
+    const past_matches = props.past_matches;
+    console.log("past_matches", props)
+    const matches = props.upcoming_matches;
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -65,15 +67,21 @@ export default function SimpleTabs(props) {
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Roster" {...a11yProps(0)} />
-                    <Tab label="Matches" {...a11yProps(1)} />
+                    <Tab label="Upcoming Matches" {...a11yProps(1)} />
+                    <Tab label="Past Matches" {...a11yProps(1)} />
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
-                Roster
+                <h2>Roster</h2>
                 <RosterTable roster={roster}/>
             </TabPanel>
             <TabPanel value={value} index={1}>
+                <h2>Upcoming Matches</h2>
                 <MatchesTable matches={matches}/>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                <h2>Past Matches</h2>
+                <PastMatchesTable past_matches={past_matches}/>
             </TabPanel>
         </div>
     );

@@ -24,7 +24,6 @@ const useStyles = makeStyles({
 /*dcp*/
 /*logo*/
 
-
 export default function SimpleTable(props) {
     const classes = useStyles();
 
@@ -35,14 +34,14 @@ export default function SimpleTable(props) {
                     <TableRow>
                         <TableCell align="left">Rank</TableCell>
                         <TableCell align="left"> </TableCell>
-                        <TableCell align="right">Name</TableCell>
-                        <TableCell align="right">Status</TableCell>
-                        <TableCell align="right">Points</TableCell>
+                        <TableCell align="center">Name</TableCell>
+                        <TableCell align="left">Status</TableCell>
+                        <TableCell align="center">Points</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {props.teams.map((team) => (
-                        <ResultsRow team={team} key={team.id}/>
+                        <ResultsRow className="grow" team={team} key={team.id}/>
                     ))}
                 </TableBody>
             </Table>

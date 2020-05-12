@@ -1,1 +1,255 @@
-{"team_data": [{"coach": null, "name": "Wings Gaming", "active": true, "deleted_at": null, "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/Wings-Gaming-new.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/Wings-Gaming-new.png"}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/wingsgamingcn"}, {"slug": "facebook", "name": "Facebook", "url": "https://www.facebook.com/dota2wingsgaming"}], "country": {"images": {"default": "https://img.abiosgaming.com/flags/China.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"}, "name": "China", "short_name": "CN", "region": {"name": "East Asia", "id": 8, "short_name": "EA"}}, "id": 1696, "short_name": "Wings"}], "players": [{"country": {"images": {"default": "https://img.abiosgaming.com/flags/China.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"}, "name": "China", "short_name": "CN", "region": {"name": "East Asia", "id": 8, "short_name": "EA"}}, "social_media_accounts": [], "roles": [{"from": "2013-03-14", "name": "2", "to": null}], "active": true, "deleted_at": null, "first_name": "Zhou", "images": {"fallback": true, "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png", "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"}, "race": null, "last_name": "Yang", "id": 10760, "nick_name": "bLinK / \u8df3\u5200\u8df3\u5200\u4e36"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/China.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"}, "name": "China", "short_name": "CN", "region": {"name": "East Asia", "id": 8, "short_name": "EA"}}, "social_media_accounts": [], "roles": [{"from": "2018-05-25", "name": "4", "to": null}, {"from": "2013-03-14", "name": "3", "to": "2018-05-24"}], "active": true, "deleted_at": null, "first_name": "Zhang", "images": {"fallback": true, "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png", "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"}, "race": null, "last_name": "Ruida", "id": 10761, "nick_name": "Faith_Bian"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/China.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"}, "name": "China", "short_name": "CN", "region": {"name": "East Asia", "id": 8, "short_name": "EA"}}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/y1122Innocence"}], "roles": [{"from": "2018-03-08", "name": "5", "to": null}, {"from": "2013-03-14", "name": "4/5", "to": "2018-03-07"}], "active": true, "deleted_at": null, "first_name": "Zhang", "images": {"fallback": true, "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png", "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"}, "race": null, "last_name": "Yiping", "id": 15701, "nick_name": "Innocence /  y`"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/China.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"}, "name": "China", "short_name": "CN", "region": {"name": "East Asia", "id": 8, "short_name": "EA"}}, "social_media_accounts": [], "roles": [{"from": "2013-03-14", "name": "1", "to": null}], "active": true, "deleted_at": null, "first_name": "Chu", "images": {"fallback": true, "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png", "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"}, "race": null, "last_name": "Zeyu", "id": 15702, "nick_name": "Shadow"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/China.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"}, "name": "China", "short_name": "CN", "region": {"name": "East Asia", "id": 8, "short_name": "EA"}}, "social_media_accounts": [], "roles": [{"from": "2018-03-08", "name": "4", "to": null}, {"from": "2013-03-14", "name": "4/5", "to": "2018-03-08"}], "active": true, "deleted_at": null, "first_name": "Li", "images": {"fallback": true, "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png", "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"}, "race": null, "last_name": "Peng", "id": 15703, "nick_name": "iceice"}], "team_id": 198, "upcoming_matches": [], "past_matches": [{"team_name": "Wings Gaming", "opponent_score": 0, "team_id": 198, "opponent_name": "Team Liquid", "date": "2019-01-27 06:49:11", "opponent_logo": "https://img.abiosgaming.com/events/thumbnails/Team-Liquid-2017-logo.png", "id": 185053, "opponent_id": 15926, "team_score": 1}]}
+{
+  "team_data": [
+    {
+      "coach": null,
+      "name": "Wings Gaming",
+      "active": true,
+      "deleted_at": null,
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/Wings-Gaming-new.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/Wings-Gaming-new.png"
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/wingsgamingcn"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/dota2wingsgaming"
+        }
+      ],
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/China.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"
+        },
+        "name": "China",
+        "short_name": "CN",
+        "region": {
+          "name": "East Asia",
+          "id": 8,
+          "short_name": "EA"
+        }
+      },
+      "id": 1696,
+      "short_name": "Wings"
+    }
+  ],
+  "players": [
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/China.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"
+        },
+        "name": "China",
+        "short_name": "CN",
+        "region": {
+          "name": "East Asia",
+          "id": 8,
+          "short_name": "EA"
+        }
+      },
+      "social_media_accounts": [],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "2",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Zhou",
+      "images": {
+        "fallback": true,
+        "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png",
+        "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"
+      },
+      "race": null,
+      "last_name": "Yang",
+      "id": 10760,
+      "nick_name": "bLinK / \u8df3\u5200\u8df3\u5200\u4e36"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/China.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"
+        },
+        "name": "China",
+        "short_name": "CN",
+        "region": {
+          "name": "East Asia",
+          "id": 8,
+          "short_name": "EA"
+        }
+      },
+      "social_media_accounts": [],
+      "roles": [
+        {
+          "from": "2018-05-25",
+          "name": "4",
+          "to": null
+        },
+        {
+          "from": "2013-03-14",
+          "name": "3",
+          "to": "2018-05-24"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Zhang",
+      "images": {
+        "fallback": true,
+        "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png",
+        "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"
+      },
+      "race": null,
+      "last_name": "Ruida",
+      "id": 10761,
+      "nick_name": "Faith_Bian"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/China.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"
+        },
+        "name": "China",
+        "short_name": "CN",
+        "region": {
+          "name": "East Asia",
+          "id": 8,
+          "short_name": "EA"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/y1122Innocence"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2018-03-08",
+          "name": "5",
+          "to": null
+        },
+        {
+          "from": "2013-03-14",
+          "name": "4/5",
+          "to": "2018-03-07"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Zhang",
+      "images": {
+        "fallback": true,
+        "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png",
+        "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"
+      },
+      "race": null,
+      "last_name": "Yiping",
+      "id": 15701,
+      "nick_name": "Innocence /  y`"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/China.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"
+        },
+        "name": "China",
+        "short_name": "CN",
+        "region": {
+          "name": "East Asia",
+          "id": 8,
+          "short_name": "EA"
+        }
+      },
+      "social_media_accounts": [],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "1",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Chu",
+      "images": {
+        "fallback": true,
+        "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png",
+        "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"
+      },
+      "race": null,
+      "last_name": "Zeyu",
+      "id": 15702,
+      "nick_name": "Shadow"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/China.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/China.png"
+        },
+        "name": "China",
+        "short_name": "CN",
+        "region": {
+          "name": "East Asia",
+          "id": 8,
+          "short_name": "EA"
+        }
+      },
+      "social_media_accounts": [],
+      "roles": [
+        {
+          "from": "2018-03-08",
+          "name": "4",
+          "to": null
+        },
+        {
+          "from": "2013-03-14",
+          "name": "4/5",
+          "to": "2018-03-08"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Li",
+      "images": {
+        "fallback": true,
+        "default": "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png",
+        "thumbnail": "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"
+      },
+      "race": null,
+      "last_name": "Peng",
+      "id": 15703,
+      "nick_name": "iceice"
+    }
+  ],
+  "team_id": 198,
+  "upcoming_matches": [],
+  "past_matches": [
+    {
+      "team_name": "Wings Gaming",
+      "opponent_score": 0,
+      "team_id": 198,
+      "opponent_name": "Team Liquid",
+      "date": "2019-01-27 06:49:11",
+      "opponent_logo": "https://img.abiosgaming.com/events/thumbnails/Team-Liquid-2017-logo.png",
+      "id": 185053,
+      "opponent_id": 15926,
+      "team_score": 1
+    }
+  ]
+}
