@@ -9,12 +9,24 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import RosterRow from "./RosterRow";
 import MatchesRow from "./MatchesRow";
+import styled from "styled-components";
 
 const useStyles = makeStyles({
     table: {
         minWidth: 800,
     },
 });
+
+
+const StyledPaper = styled(Paper)`
+  padding:20px;
+  background-color: rgb(226, 230, 244) !important;
+`;
+
+const StyledTable = styled(Table)`
+  padding:20px;
+  background-color: rgb(253, 253, 253) !important;
+`;
 
 export default function PastMatchesTable(props) {
     const past_matches = props.past_matches;
@@ -24,8 +36,8 @@ export default function PastMatchesTable(props) {
     const classes = useStyles();
 
     return (
-        <TableContainer component={Paper}>
-            <Table className={classes.table} aria-label="simple table">
+        <StyledPaper component={Paper}>
+            <StyledTable className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell align="left">Win/Loss</TableCell>
@@ -40,7 +52,7 @@ export default function PastMatchesTable(props) {
                         <MatchesRow match={{match, upcoming}} key={match.id}/>
                     ))}
                 </TableBody>
-            </Table>
-        </TableContainer>
+            </StyledTable>
+        </StyledPaper>
     );
 }

@@ -49,22 +49,22 @@ function Footer() {
                 <div className="left">
                     <ul>
                         <li><a href="/">Standings</a></li>
-                        <li><a href="/">Standings</a></li>
-                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Widgets</a></li>
                     </ul>
                 </div>
                 <div className="middle">
                     <ul>
-                        <li><a href="/">Standings</a></li>
-                        <li><a href="/">Standings</a></li>
-                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Documentation</a></li>
+                        <li><a href="/">API Reference</a></li>
+                        <li><a href="/">Open Source</a></li>
                     </ul>
                 </div>
                 <div className="right">
                     <ul>
-                        <li><a href="/">Standings</a></li>
-                        <li><a href="/">Standings</a></li>
-                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Contact</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Jobs</a></li>
                     </ul>
                 </div>
 

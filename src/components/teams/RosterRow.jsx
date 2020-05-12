@@ -2,13 +2,21 @@ import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
 import React, {useState} from "react";
 import {ConvertRole} from "./Convertions";
+import styled from "styled-components";
 
+
+const StyledRosterRow = styled(TableRow)`
+  border-bottom: 9px solid rgb(226, 230, 244) !important;
+  &:hover {
+    background-color: rgb(225, 229, 244);
+  }
+`;
 
 export default function RosterRow(props) {
     const player = props.player;
 
     return (
-        <TableRow key={player.id}>
+        <StyledRosterRow key={player.id}>
             <TableCell component="th" scope="row">
                 {player.nick_name}
             </TableCell>
@@ -23,7 +31,7 @@ export default function RosterRow(props) {
                     return <div key={role.name}>{ConvertRole(role.name)} </div>;
                 })}
             </TableCell>
-        </TableRow>
+        </StyledRosterRow>
     );
 }
 

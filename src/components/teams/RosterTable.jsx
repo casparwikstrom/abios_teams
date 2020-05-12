@@ -8,6 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import RosterRow from "./RosterRow";
+import styled from "styled-components";
 
 const useStyles = makeStyles({
     table: {
@@ -15,14 +16,24 @@ const useStyles = makeStyles({
     },
 });
 
+const StyledPaper = styled(Paper)`
+  padding:20px;
+  background-color: rgb(226, 230, 244) !important;
+`;
+
+const StyledTable = styled(Table)`
+  padding:20px;
+  background-color: rgb(253, 253, 253) !important;
+`;
+
 export default function RosterTable(props) {
 
     const players = props.roster.roster.players;
     const classes = useStyles();
 
     return (
-        <TableContainer component={Paper}>
-            <Table className={classes.table} aria-label="simple table">
+        <StyledPaper component={Paper}>
+            <StyledTable className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell align="left">Nick</TableCell>
@@ -36,7 +47,7 @@ export default function RosterTable(props) {
                         <RosterRow align="center" player={player} key={player.id}/>
                     ))}
                 </TableBody>
-            </Table>
-        </TableContainer>
+            </StyledTable>
+        </StyledPaper>
     );
 }

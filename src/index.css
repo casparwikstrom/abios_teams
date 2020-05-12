@@ -5,7 +5,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: rgb(240, 241, 245);
+    background: rgb(244, 248, 250);
 }
 
 code {
@@ -13,11 +13,9 @@ code {
     monospace;
 }
 
-/*
-* {
-  border: 1px solid red;
-}
-*/
+/** {
+    border: 1px solid red;
+}*/
 
 img {
     height: 40px !important;
@@ -25,4 +23,9 @@ img {
 
 h2 {
     margin: 0px !important;
+}
+
+.MuiContainer-root {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }

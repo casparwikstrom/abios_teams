@@ -9,6 +9,8 @@ import Box from '@material-ui/core/Box';
 import RosterTable from "./RosterTable";
 import MatchesTable from "./MatchesTable";
 import PastMatchesTable from "./PastMatchesTable";
+import styled from "styled-components";
+
 
 function TabPanel(props) {
     const {children, value, index, ...other} = props;
@@ -50,6 +52,13 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
+const StyledTabs = styled(AppBar)`
+    background-color: rgb(143, 148, 252) !important; 
+`;
+
+
+
 export default function SimpleTabs(props) {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
@@ -64,13 +73,13 @@ export default function SimpleTabs(props) {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <StyledTabs position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Roster" {...a11yProps(0)} />
                     <Tab label="Upcoming Matches" {...a11yProps(1)} />
                     <Tab label="Past Matches" {...a11yProps(1)} />
                 </Tabs>
-            </AppBar>
+            </StyledTabs>
             <TabPanel value={value} index={0}>
                 <h2>Roster</h2>
                 <RosterTable roster={roster}/>

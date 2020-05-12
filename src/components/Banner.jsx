@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import BannerPicture from "./BannerPicture";
-
+import PropTypes from "prop-types";
 
 const Thing = styled.div`
     .banner:before {
@@ -29,19 +29,20 @@ const Thing = styled.div`
    }
 }
 `
+const sectionStyle = {
+    backgroundImage: "url('https://img.abiosgaming.com/games/dota-2-splash-bg.png')",
+};
+
+Banner.propTypes = {
+    title: PropTypes.string,
+    image_url: PropTypes.string
+};
 
 function Banner(props) {
-    const team_info = props.team_info;
-    console.log("team info picture", props)
-
-    const sectionStyle = {
-        backgroundImage: "url('https://img.abiosgaming.com/games/dota-2-splash-bg.png')",
-    };
-
     return (
         <Thing>
             <div className="banner" style={sectionStyle}>
-                <BannerPicture team_info={team_info}></BannerPicture>
+                <BannerPicture title={props.title} image_url={props.image_url} />
             </div>
         </Thing>
     );
