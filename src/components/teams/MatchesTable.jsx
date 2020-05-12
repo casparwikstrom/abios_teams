@@ -27,7 +27,7 @@ export default function MatchesTable(props) {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell align="center">vs</TableCell>
+                        <TableCell align="center">Vs</TableCell>
                         <TableCell align="center">Opponent</TableCell>
                         <TableCell align="center">Date</TableCell>
                     </TableRow>

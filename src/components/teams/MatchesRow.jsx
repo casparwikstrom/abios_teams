@@ -38,7 +38,7 @@ export default function MatchesRow(props) {
                     {WinLossFlag(CalcWin(match.team_score, match.opponent_score))}
                 </TableCell>
             )}
-            <TableCell align="center">vs</TableCell>
+            <TableCell align="center">Vs</TableCell>
             <TableCell align="center">
                 <div>
                     <img src={match.opponent_logo} alt=""/>

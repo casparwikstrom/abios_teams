@@ -29,7 +29,7 @@ export default function PastMatchesTable(props) {
                 <TableHead>
                     <TableRow>
                         <TableCell align="left">Win/Loss</TableCell>
-                        <TableCell align="center">vs</TableCell>
+                        <TableCell align="center">Vs</TableCell>
                         <TableCell align="center">Opponent</TableCell>
                         <TableCell align="center">Date</TableCell>
                         <TableCell align="center">Score</TableCell>
