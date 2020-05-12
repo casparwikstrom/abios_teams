@@ -5,8 +5,8 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";*/
 
 
-const NavbarStyle = styled.div`
-    .navbar{
+const FooterStyle = styled.div`
+    .footer{
         z-index: 5;
         display: flex;
         top: 0;
@@ -22,16 +22,54 @@ const NavbarStyle = styled.div`
             color: white;
             text-decoration: none;
         }
+        ul {
+          list-style-type: none;
+        }
+        .left {
+            text-decoration: none;
+        }
+        li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+        .middle {
+        
+        }
+        .right {
+        
+        }
+        
     }
 `
 
 function Footer() {
     return (
-        <NavbarStyle>
-            <div className="navbar">
-                <a href="/">Standings</a>
+        <FooterStyle>
+            <div className="footer">
+                <div className="left">
+                    <ul>
+                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Standings</a></li>
+                    </ul>
+                </div>
+                <div className="middle">
+                    <ul>
+                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Standings</a></li>
+                    </ul>
+                </div>
+                <div className="right">
+                    <ul>
+                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Standings</a></li>
+                        <li><a href="/">Standings</a></li>
+                    </ul>
+                </div>
+
             </div>
-        </NavbarStyle>
+        </FooterStyle>
     );
 }
 

@@ -13,9 +13,11 @@ code {
     monospace;
 }
 
-/** {
+/*
+* {
   border: 1px solid red;
-}*/
+}
+*/
 
 img {
     height: 40px !important;
