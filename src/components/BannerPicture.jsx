@@ -3,7 +3,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
 import {MyLoader} from "./MyLoader";
 import styled from "styled-components";
-
+import "../assets/dota.jpg"
 
 const PictureStyling = styled.div`
     .banner_picture img {
@@ -21,7 +21,7 @@ export default function BannerPicture(props) {
     return (
         <PictureStyling>
             <div className="name_and_picture">
-                <div className="banner_picture"><img src={info && info.picture} alt=""/></div>
+                <div className="banner_picture"><img src="../assets/dota.jpg" alt=""/></div>
                 <div className="h2">
                     {info && info.info.name}
                 </div>

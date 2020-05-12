@@ -23,6 +23,11 @@ const NavbarStyle = styled.div`
             color: white;
             text-decoration: none;
         }
+        .link {
+            width: 70%;
+            float: left;
+            display: flex;
+        }
     }
 `
 
@@ -30,7 +35,12 @@ function MainNavbar() {
     return (
         <NavbarStyle>
             <div className="navbar">
-                <a href="/">Standings</a>
+                <div className="logo">
+                    <img src="https://img.abiosgaming.com/other/Abios-Logo-with-white-text.png" alt=""/>
+                </div>
+                <div className="link">
+                    <a href="/">Standings</a>
+                </div>
             </div>
         </NavbarStyle>
     );
