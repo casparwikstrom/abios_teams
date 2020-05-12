@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {makeStyles} from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -8,8 +7,9 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
 import ResultsRow from "./ResultsRow";
+/*import Typography from '@material-ui/core/Typography';
+import ReactDOM from 'react-dom';*/
 
 
 const useStyles = makeStyles({
@@ -24,7 +24,6 @@ const useStyles = makeStyles({
 /*dcp*/
 /*logo*/
 
-
 export default function SimpleTable(props) {
     const classes = useStyles();
 
@@ -35,14 +34,14 @@ export default function SimpleTable(props) {
                     <TableRow>
                         <TableCell align="left">Rank</TableCell>
                         <TableCell align="left"> </TableCell>
-                        <TableCell align="right">Name</TableCell>
-                        <TableCell align="right">Status</TableCell>
-                        <TableCell align="right">Points</TableCell>
+                        <TableCell align="center">Name</TableCell>
+                        <TableCell align="left">Status</TableCell>
+                        <TableCell align="center">Points</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {props.teams.map((team) => (
-                        <ResultsRow team={team}/>
+                        <ResultsRow className="grow" team={team} key={team.id}/>
                     ))}
                 </TableBody>
             </Table>

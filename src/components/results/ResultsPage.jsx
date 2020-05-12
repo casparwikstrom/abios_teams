@@ -5,7 +5,7 @@ import SimpleTable from "./ResultsTable";
 import Container from '@material-ui/core/Container';
 import {resultsFetch} from "../../api/results/ResultsFetch";
 import {MyLoader} from "../MyLoader";
-
+import Banner from "../Banner";
 
 
 function ResultsPage() {
@@ -21,15 +21,15 @@ function ResultsPage() {
         })
     }, []);
 
-    if (loading == true) {
-        return <MyLoader/>
-    } else {
-        return (
-            <Container fixed>
+    return (
+        <div>
+            <Banner/>
+            {loading && <MyLoader/>}
+            {!loading && <Container fixed>
                 <SimpleTable teams={teams}/>
-            </Container>
-        );
-    }
+            </Container>}
+        </div>
+    );
 }
 
 

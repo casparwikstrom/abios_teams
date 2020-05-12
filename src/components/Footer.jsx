@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 const NavbarStyle = styled.div`
     .navbar{
-        position: fixed;
         z-index: 5;
         display: flex;
         top: 0;
@@ -15,7 +14,7 @@ const NavbarStyle = styled.div`
         width: 100%;
         background: #262730;
         border-bottom: 1px solid #21222b;
-        height: 50px;
+        height: 200px;
         /* color: white; */
         justify-content: space-evenly;
         align-items: center;
@@ -26,7 +25,7 @@ const NavbarStyle = styled.div`
     }
 `
 
-function MainNavbar() {
+function Footer() {
     return (
         <NavbarStyle>
             <div className="navbar">
@@ -36,4 +35,4 @@ function MainNavbar() {
     );
 }
 
-export default MainNavbar;
+export default Footer;
