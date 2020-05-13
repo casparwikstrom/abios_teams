@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BannerPicture from "./BannerPicture";
 import PropTypes from "prop-types";
 
-const Thing = styled.div`
+const StyledImage = styled.div`
     .banner:before {
         content: "";
         position: absolute;
@@ -36,11 +36,11 @@ const sectionStyle = {
 
 function Banner(props) {
   return (
-    <Thing>
+    <StyledImage>
       <div className="banner" style={sectionStyle}>
         <BannerPicture title={props.title} image_url={props.image_url} />
       </div>
-    </Thing>
+    </StyledImage>
   );
 }
 

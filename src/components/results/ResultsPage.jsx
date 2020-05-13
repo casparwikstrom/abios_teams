@@ -2,7 +2,7 @@ import React from "react";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ResultsTable from "./ResultsTable";
 import Container from "@material-ui/core/Container";
-import { MyLoader } from "../MyLoader";
+import { AbiosLoader } from "../AbiosLoader";
 import Banner from "../Banner";
 import { useResults } from "../../api/results/useResults";
 
@@ -13,7 +13,7 @@ export function ResultsPage() {
   const { isLoading, teams } = useResults();
   return (
     <div>
-      {isLoading && <MyLoader />}
+      {isLoading && <AbiosLoader />}
       {!isLoading && <Banner title={"dota"} image_url={dota_image_url} />}
       {!isLoading && (
         <Container fixed>

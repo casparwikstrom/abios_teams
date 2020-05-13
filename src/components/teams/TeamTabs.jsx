@@ -4,38 +4,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import RosterTable from "./RosterTable";
-import MatchesTable from "./MatchesTable";
-import PastMatchesTable from "./PastMatchesTable";
 import styled from "styled-components";
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
+import RosterTable from "./roster/RosterTable";
+import UpcomingMatchesTable from "./matches/UpcomingMatchesTable";
+import PastMatchesTable from "./matches/PastMatchesTable";
+import { TabPanel } from "./TabPanel";
 
 function a11yProps(index) {
   return {
@@ -61,15 +34,13 @@ const StyledPanel = styled(TabPanel)`
   box-shadow: 0 5px 15px 0 rgba(95, 150, 250, 0.15);
 `;
 
-export default function SimpleTabs(props) {
+export default function TeamTabs(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
-  console.log("dsdsdsdasdasdasdasdadas", props);
 
   return (
     <div className={classes.root}>
@@ -81,7 +52,7 @@ export default function SimpleTabs(props) {
         >
           <Tab label="Roster" {...a11yProps(0)} />
           <Tab label="Upcoming Matches" {...a11yProps(1)} />
-          <Tab label="Past Matches" {...a11yProps(1)} />
+          <Tab label="Past Matches" {...a11yProps(2)} />
         </Tabs>
       </StyledTabs>
       <StyledPanel value={value} index={0}>
@@ -90,7 +61,7 @@ export default function SimpleTabs(props) {
       </StyledPanel>
       <StyledPanel value={value} index={1}>
         <h2>Upcoming Matches</h2>
-        <MatchesTable upcoming_matches={props.upcoming_matches} />
+        <UpcomingMatchesTable upcoming_matches={props.upcoming_matches} />
       </StyledPanel>
       <StyledPanel value={value} index={2}>
         <h2>Past Matches</h2>
@@ -100,7 +71,7 @@ export default function SimpleTabs(props) {
   );
 }
 
-SimpleTabs.proptype = {
+TeamTabs.proptype = {
   upcoming_matches: PropTypes.array,
   past_matches: PropTypes.array,
   roster: PropTypes.object,

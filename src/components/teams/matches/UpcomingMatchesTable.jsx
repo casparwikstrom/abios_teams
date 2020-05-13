@@ -27,7 +27,7 @@ const StyledTable = styled(Table)`
   box-shadow: 0 5px 15px 0 rgba(95, 150, 250, 0.15) !important;
 `;
 
-export default function MatchesTable(props) {
+export default function UpcomingMatchesTable(props) {
   const classes = useStyles();
   return (
     <StyledTableContainer component={Paper}>
@@ -49,6 +49,6 @@ export default function MatchesTable(props) {
   );
 }
 
-MatchesTable.prototype = {
+UpcomingMatchesTable.prototype = {
   upcoming_matches: PropTypes.array,
 };
