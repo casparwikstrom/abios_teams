@@ -64,14 +64,12 @@ const StyledPanel = styled(TabPanel)`
 export default function SimpleTabs(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const roster = props;
-  const past_matches = props.past_matches;
-  console.log("past_matches", props);
-  const matches = props.upcoming_matches;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  console.log("dsdsdsdasdasdasdasdadas", props);
 
   return (
     <div className={classes.root}>
@@ -88,16 +86,22 @@ export default function SimpleTabs(props) {
       </StyledTabs>
       <StyledPanel value={value} index={0}>
         <h2>Roster</h2>
-        <RosterTable roster={roster} />
+        <RosterTable roster={props.roster} />
       </StyledPanel>
       <StyledPanel value={value} index={1}>
         <h2>Upcoming Matches</h2>
-        <MatchesTable matches={matches} />
+        <MatchesTable upcoming_matches={props.upcoming_matches} />
       </StyledPanel>
       <StyledPanel value={value} index={2}>
         <h2>Past Matches</h2>
-        <PastMatchesTable past_matches={past_matches} />
+        <PastMatchesTable past_matches={props.past_matches} />
       </StyledPanel>
     </div>
   );
 }
+
+SimpleTabs.proptype = {
+  upcoming_matches: PropTypes.array,
+  past_matches: PropTypes.array,
+  roster: PropTypes.object,
+};

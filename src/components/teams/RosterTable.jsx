@@ -9,6 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import RosterRow from "./RosterRow";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles({
   table: {
@@ -27,7 +28,6 @@ const StyledTable = styled(Table)`
 `;
 
 export default function RosterTable(props) {
-  const players = props.roster.roster.players;
   const classes = useStyles();
 
   return (
@@ -43,11 +43,15 @@ export default function RosterTable(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {players.map((player) => (
-            <RosterRow align="center" player={player} key={player.id} />
+          {props.roster.players.map((player) => (
+            <RosterRow align="center" {...player} key={player.id} />
           ))}
         </TableBody>
       </StyledTable>
     </StyledTableContainer>
   );
 }
+
+RosterTable.proptype = {
+  roster: PropTypes.object,
+};

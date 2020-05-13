@@ -1,53 +1,55 @@
 import React from "react";
 import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
-import {ConvertRole} from "./Convertions";
 import styled from "styled-components";
-
+import { convertRole } from "./RoleUtil";
+import Proptypes from "prop-types";
 
 const StyledCell = styled(TableCell)`
-    width:20% !important;
-    background-color: rgb(253, 253, 253) !important;
-    border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
+  width: 20% !important;
+  background-color: rgb(253, 253, 253) !important;
+  border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
 `;
 
 const StyledRow = styled(TableRow)`
-    background-color: rgb(253, 253, 253) !important;
-    border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
+  background-color: rgb(253, 253, 253) !important;
+  border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
 `;
 
-
 export default function RosterRow(props) {
-    const player = props.player;
-    console.log("player", player.country.name);
-
-    return (
-        <StyledRow key={player.id}>
-            <StyledCell component="th" scope="row">
-                {player.nick_name}
-            </StyledCell>
-            <TableCell align="left">
-                <img src={player.images.default} alt=""/>
-            </TableCell>
-            <TableCell align="center">
-                {player.first_name} {player.last_name}
-            </TableCell>
-            <TableCell align="center" >
-                <div>
-                    <div>
-                        <img src={player.country.images.default} alt=""/>
-                    </div>
-                    <div>
-                        {player.country.name}
-                    </div>
-                </div>
-
-            </TableCell>
-            <TableCell align="center">
-                {player.roles.map((role) => {
-                    return <div key={role.name}>{ConvertRole(role.name)} </div>;
-                })}
-            </TableCell>
-        </StyledRow>
-    );
+  return (
+    <StyledRow key={props.id}>
+      <StyledCell component="th" scope="row">
+        {props.nick_name}
+      </StyledCell>
+      <TableCell align="left">
+        <img src={props.images.default} alt="" />
+      </TableCell>
+      <TableCell align="center">
+        {props.first_name} {props.last_name}
+      </TableCell>
+      <TableCell align="center">
+        <div>
+          <div>
+            <img src={props.country.images.default} alt="" />
+          </div>
+          <div>{props.country.name}</div>
+        </div>
+      </TableCell>
+      <TableCell align="center">
+        {props.roles.map((role) => (
+          <div key={role.name}>{convertRole(role.name)} </div>
+        ))}
+      </TableCell>
+    </StyledRow>
+  );
 }
+
+RosterRow.proptype = {
+  nick_name: Proptypes.string,
+  images: Proptypes.object,
+  first_name: Proptypes.string,
+  last_name: Proptypes.string,
+  country: Proptypes.object,
+  roles: Proptypes.array,
+};

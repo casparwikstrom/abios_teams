@@ -9,6 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import ResultsRow from "./ResultsRow";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles({
   table: {
@@ -26,9 +27,8 @@ const StyledTable = styled(Table)`
   background-color: rgb(253, 253, 253) !important;
 `;
 
-export default function SimpleTable(props) {
+export default function ResultsTable(props) {
   const classes = useStyles();
-
   return (
     <StyledTableContainer component={Paper}>
       <StyledTable className={classes.table} aria-label="simple table">
@@ -42,10 +42,14 @@ export default function SimpleTable(props) {
         </TableHead>
         <TableBody>
           {props.teams.map((team) => (
-            <ResultsRow classes={{ label: "root" }} team={team} key={team.id} />
+            <ResultsRow {...team} key={team.id} />
           ))}
         </TableBody>
       </StyledTable>
     </StyledTableContainer>
   );
 }
+
+ResultsTable.prototype = {
+  teams: PropTypes.array,
+};

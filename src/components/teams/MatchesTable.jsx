@@ -9,6 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import MatchesRow from "./MatchesRow";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles({
   table: {
@@ -27,11 +28,7 @@ const StyledTable = styled(Table)`
 `;
 
 export default function MatchesTable(props) {
-  const upcoming_matches = props.matches;
-  const upcoming = true;
   const classes = useStyles();
-  console.log("matches props", upcoming_matches);
-
   return (
     <StyledTableContainer component={Paper}>
       <StyledTable className={classes.table} aria-label="simple table">
@@ -43,11 +40,15 @@ export default function MatchesTable(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {upcoming_matches.map((match) => (
-            <MatchesRow match={{ match, upcoming }} key={match.id} />
+          {props.upcoming_matches.map((match) => (
+            <MatchesRow upcoming={true} {...match} key={match.id} />
           ))}
         </TableBody>
       </StyledTable>
     </StyledTableContainer>
   );
 }
+
+MatchesTable.prototype = {
+  upcoming_matches: PropTypes.array,
+};

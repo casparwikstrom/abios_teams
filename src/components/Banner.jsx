@@ -34,11 +34,6 @@ const sectionStyle = {
     "url('https://img.abiosgaming.com/games/dota-2-splash-bg.png')",
 };
 
-Banner.propTypes = {
-  title: PropTypes.string,
-  image_url: PropTypes.string,
-};
-
 function Banner(props) {
   return (
     <Thing>
@@ -49,4 +44,8 @@ function Banner(props) {
   );
 }
 
+Banner.propTypes = {
+  title: PropTypes.string,
+  image_url: PropTypes.string,
+};
 export default Banner;
