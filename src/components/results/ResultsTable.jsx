@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     },
 });
 
-const StyledPaper = styled(Paper)`
+const StyledTableContainer = styled(TableContainer)`
   padding:20px;
   background-color: rgb(226, 230, 244) !important;
 `;
@@ -29,12 +29,11 @@ const StyledTable = styled(Table)`
   background-color: rgb(253, 253, 253) !important;
 `;
 
-
 export default function SimpleTable(props) {
     const classes = useStyles();
 
     return (
-        <StyledPaper component={Paper}>
+        <StyledTableContainer component={Paper}>
             <StyledTable className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow classes={{ label: 'root' }}>
@@ -50,6 +49,6 @@ export default function SimpleTable(props) {
                     ))}
                 </TableBody>
             </StyledTable>
-        </StyledPaper>
+        </StyledTableContainer>
     );
 }

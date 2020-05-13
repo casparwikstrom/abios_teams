@@ -5,10 +5,13 @@ import styled from 'styled-components';
 import {ConvertStatus} from "../teams/Convertions";
 
 const StyledResultsRow = styled(TableRow)`
-  border-bottom: 9px solid rgb(226, 230, 244) !important;
-  &:hover {
+    border-bottom: 9px solid rgb(226, 230, 244) !important;
+    &:hover {
     background-color: rgb(225, 229, 244);
-  }
+    }
+    td{
+        text-decoration: none !important;
+    }
 `;
 
 
@@ -23,7 +26,12 @@ export default function ResultsRow(props) {
             </TableCell>
             <TableCell borderRadius={16} align="center">
                 <div>
-                    <img src={props.team.logo} alt=""/>{props.team.name}
+                    <div>
+                        <img src={props.team.logo} alt=""/>
+                    </div>
+                    <div>
+                        {props.team.name}
+                    </div>
                 </div>
             </TableCell>
             <TableCell align="center">{ConvertStatus(props.team.status)}</TableCell>

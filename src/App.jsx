@@ -12,9 +12,7 @@ import Container from "@material-ui/core/Container";
 function App() {
     return (
         <div className="App">
-
             <Router>
-
                     <MainNavbar/>
                     <Switch>
                         <Route path='/team/:id' component={TeamPage}>
@@ -24,7 +22,6 @@ function App() {
                         </Route>
                     </Switch>
                     <Footer/>
-
             </Router>
         </div>
     );

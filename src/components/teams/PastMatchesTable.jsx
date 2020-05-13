@@ -18,14 +18,14 @@ const useStyles = makeStyles({
 });
 
 
-const StyledPaper = styled(Paper)`
-  padding:20px;
-  background-color: rgb(226, 230, 244) !important;
+const StyledTableContainer = styled(TableContainer)`
+  background-color: rgb(244, 248, 250) !important;
 `;
 
 const StyledTable = styled(Table)`
-  padding:20px;
+  padding:20px !important;
   background-color: rgb(253, 253, 253) !important;
+  box-shadow:0 5px 15px 0 rgba(95,150,250,.15) !important;
 `;
 
 export default function PastMatchesTable(props) {
@@ -36,7 +36,7 @@ export default function PastMatchesTable(props) {
     const classes = useStyles();
 
     return (
-        <StyledPaper component={Paper}>
+        <StyledTableContainer component={Paper}>
             <StyledTable className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
@@ -53,6 +53,6 @@ export default function PastMatchesTable(props) {
                     ))}
                 </TableBody>
             </StyledTable>
-        </StyledPaper>
+        </StyledTableContainer>
     );
 }

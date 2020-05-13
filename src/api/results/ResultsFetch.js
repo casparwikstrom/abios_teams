@@ -8,8 +8,9 @@ function toTeam(data) {
         dcp: data.dpc,
         logo: data.team_lgo
     }
-
+    console.log("team team team team", teams)
     return teams;
+
 }
 
 export async function resultsFetch() {

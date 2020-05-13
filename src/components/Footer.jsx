@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 const FooterStyle = styled.div`
     .footer{
-        z-index: 5;
         display: flex;
         top: 0;
         left: 0;
