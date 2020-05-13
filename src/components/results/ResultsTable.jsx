@@ -34,10 +34,18 @@ export default function ResultsTable(props) {
       <StyledTable className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow classes={{ label: "root" }}>
-            <TableCell align="left">Rank</TableCell>
-            <TableCell align="center">Name</TableCell>
-            <TableCell align="left">Status</TableCell>
-            <TableCell align="center">Points</TableCell>
+            <TableCell align="left">
+              <h3>RANK</h3>
+            </TableCell>
+            <TableCell align="center">
+              <h3>TEAM</h3>
+            </TableCell>
+            <TableCell align="left">
+              <h3>INVITATION STATUS</h3>
+            </TableCell>
+            <TableCell align="center">
+              <h3>DPC POINTS</h3>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

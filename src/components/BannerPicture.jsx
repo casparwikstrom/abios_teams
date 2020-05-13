@@ -10,6 +10,11 @@ const PictureStyling = styled.div`
   img {
     height: 150px !important;
   }
+  h2 {
+    letter-spacing: 1.5px;
+    font-weight: 600 !important;
+    font-family: Raleway !important;
+  }
 `;
 
 export default function BannerPicture(props) {

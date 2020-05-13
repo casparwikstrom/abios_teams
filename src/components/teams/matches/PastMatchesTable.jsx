@@ -38,11 +38,19 @@ export default function PastMatchesTable(props) {
       <StyledTable className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="left">Win/Loss</TableCell>
-            <TableCell align="center">Vs</TableCell>
-            <TableCell align="center">Opponent</TableCell>
-            <TableCell align="center">Date</TableCell>
-            <TableCell align="center">Score</TableCell>
+            <TableCell align="left">
+              <h3>WIN/LOSS</h3>
+            </TableCell>
+            <TableCell align="center"></TableCell>
+            <TableCell align="center">
+              <h3>OPPONENT</h3>
+            </TableCell>
+            <TableCell align="center">
+              <h3>DATE </h3>
+            </TableCell>
+            <TableCell align="center">
+              <h3>SCORE</h3>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

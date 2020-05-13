@@ -14,7 +14,12 @@ export function ResultsPage() {
   return (
     <div>
       {isLoading && <AbiosLoader />}
-      {!isLoading && <Banner title={"dota"} image_url={dota_image_url} />}
+      {!isLoading && (
+        <Banner
+          title={"The International Invitations"}
+          image_url={dota_image_url}
+        />
+      )}
       {!isLoading && (
         <Container fixed>
           <ResultsTable teams={teams} />

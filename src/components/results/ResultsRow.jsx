@@ -7,6 +7,7 @@ import { InvitationFlag } from "./InvitationFlag";
 
 const StyledResultsRow = styled(TableRow)`
   border-bottom: 9px solid rgb(226, 230, 244) !important;
+  text-decoration: none;
   &:hover {
     background-color: rgb(225, 229, 244);
   }

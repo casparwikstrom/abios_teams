@@ -9,9 +9,15 @@ const StyledCell = styled(TableCell)`
   width: 20% !important;
   background-color: rgb(253, 253, 253) !important;
   border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
+  img {
+    height: 40px !important;
+    width: 40px;
+    border-radius: 30px;
+  }
 `;
 
 const StyledRow = styled(TableRow)`
+  text-decoration: none;
   background-color: rgb(253, 253, 253) !important;
   border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
 `;
@@ -22,20 +28,20 @@ export default function RosterRow(props) {
       <StyledCell component="th" scope="row">
         {props.nick_name}
       </StyledCell>
-      <TableCell align="left">
+      <StyledCell align="left">
         <img src={props.images.default} alt="" />
-      </TableCell>
+      </StyledCell>
       <TableCell align="center">
         {props.first_name} {props.last_name}
       </TableCell>
-      <TableCell align="center">
+      <StyledCell align="center">
         <div>
           <div>
             <img src={props.country.images.default} alt="" />
           </div>
           <div>{props.country.name}</div>
         </div>
-      </TableCell>
+      </StyledCell>
       <TableCell align="center">
         {props.roles.map((role) => (
           <div key={role.name}>{convertRole(role.name)} </div>
