@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router";
 import Banner from "../Banner";
-import { MyLoader } from "../MyLoader";
+import { AbiosLoader } from "../AbiosLoader";
 import Container from "@material-ui/core/Container";
-import LabTabs from "./LabTabs";
+import LabTabs from "./TeamTabs";
 import styled from "styled-components";
 import { useTeam } from "../../api/teams/useTeam";
 
@@ -18,7 +18,7 @@ function TeamPage() {
   const { isLoading, team } = useTeam(id);
   return (
     <div>
-      {isLoading && <MyLoader />}
+      {isLoading && <AbiosLoader />}
       {!isLoading && (
         <Banner
           title={team.team_info.info.name}

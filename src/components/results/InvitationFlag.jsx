@@ -1,31 +1,31 @@
 import React from "react";
-import { WinLossStyle } from "../teams/WinLoss";
 import Proptypes from "prop-types";
+import { StatusFlag } from "../StatusFlag";
 
 export function InvitationFlag(props) {
   if (!(typeof props.status != "undefined" && props.status != null)) {
     return (
-      <WinLossStyle>
+      <StatusFlag>
         <div className="win_loss tie">Unknown Status</div>
-      </WinLossStyle>
+      </StatusFlag>
     );
   } else if (props.status === "SECURED_INVITE") {
     return (
-      <WinLossStyle>
+      <StatusFlag>
         <div className="win_loss win">Invited</div>
-      </WinLossStyle>
+      </StatusFlag>
     );
   } else if (props.status === "QUALIFIED") {
     return (
-      <WinLossStyle>
+      <StatusFlag>
         <div className="win_loss tie">Currently Qualified</div>
-      </WinLossStyle>
+      </StatusFlag>
     );
   } else {
     return (
-      <WinLossStyle>
+      <StatusFlag>
         <div className="win_loss loss">Not Qualified</div>
-      </WinLossStyle>
+      </StatusFlag>
     );
   }
 }

@@ -27,7 +27,6 @@ export function useTeam(id) {
   useEffect(() => {
     apiFetch(teamUrl).then((result) => {
       let parsedTeam = toTeam(result);
-      console.log("asd", parsedTeam);
       setTeam(parsedTeam);
       setIsLoading(false);
     });

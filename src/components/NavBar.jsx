@@ -27,7 +27,7 @@ const NavbarStyle = styled.div`
   }
 `;
 
-function MainNavbar() {
+function NavBar() {
   return (
     <NavbarStyle>
       <div className="navbar">
@@ -45,4 +45,4 @@ function MainNavbar() {
   );
 }
 
-export default MainNavbar;
+export default NavBar;

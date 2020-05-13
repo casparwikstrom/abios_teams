@@ -1,7 +1,7 @@
 import React from "react";
 import Loader from "react-loader-spinner";
 
-export function MyLoader() {
+export function AbiosLoader() {
   return (
     <div className="loader">
       <Loader

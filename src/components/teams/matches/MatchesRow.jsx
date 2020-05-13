@@ -13,9 +13,7 @@ const StyledMatchesRow = styled(TableRow)`
 `;
 
 function removeTime(time) {
-  var newtime = time;
-  newtime = newtime.split(" ")[0];
-  return newtime;
+  return time.split(" ")[0];
 }
 
 export default function MatchesRow(props) {
