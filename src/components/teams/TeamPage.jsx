@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router";
 import Banner from "../Banner";
-import { fetchRoster } from "../../api/teams/TeamFetch";
 import { MyLoader } from "../MyLoader";
 import Container from "@material-ui/core/Container";
 import LabTabs from "./LabTabs";
 import styled from "styled-components";
+import { useTeam } from "../../api/teams/useTeam";
 
 const TeamWrapper = styled.div`
   .makeStyles-root-9 {
@@ -15,39 +15,24 @@ const TeamWrapper = styled.div`
 
 function TeamPage() {
   const { id } = useParams();
-  const [loading, setLoading] = useState(true);
-  const [teamId, setID] = useState({ id });
-  const [team_info, setTeam] = useState([]);
-  const [roster, setRoster] = useState({});
-  const [past_matches, setPastMatches] = useState({});
-  const [upcoming_matches, setMatches] = useState({});
-
-  useEffect(() => {
-    let team = fetchRoster(id);
-    team.then((result) => {
-      setTeam(result.team_info);
-      setID(id);
-      setRoster(result.roster);
-      setPastMatches(result.matches.past_matches);
-      setMatches(result.matches.upcoming_matches);
-      setLoading(false);
-    });
-  }, []);
-
+  const { isLoading, team } = useTeam(id);
   return (
     <div>
-      {!loading && (
-        <Banner title={team_info.info.name} image_url={team_info.picture} />
+      {isLoading && <MyLoader />}
+      {!isLoading && (
+        <Banner
+          title={team.team_info.info.name}
+          image_url={team.team_info.picture}
+        />
       )}
-      {loading && <MyLoader />}
       <TeamWrapper>
-        {!loading && (
+        {!isLoading && (
           <Container fixed>
             <LabTabs
               className="lab_tabs"
-              roster={roster}
-              past_matches={past_matches}
-              upcoming_matches={upcoming_matches}
+              roster={team.roster}
+              past_matches={team.matches.past_matches}
+              upcoming_matches={team.matches.upcoming_matches}
             />
           </Container>
         )}

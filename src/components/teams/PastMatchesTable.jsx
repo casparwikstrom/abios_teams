@@ -9,6 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import MatchesRow from "./MatchesRow";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles({
   table: {
@@ -29,7 +30,6 @@ const StyledTable = styled(Table)`
 export default function PastMatchesTable(props) {
   const past_matches = props.past_matches;
   console.log("past_matches", props);
-  const upcoming = false;
 
   const classes = useStyles();
 
@@ -47,10 +47,14 @@ export default function PastMatchesTable(props) {
         </TableHead>
         <TableBody>
           {past_matches.map((match) => (
-            <MatchesRow match={{ match, upcoming }} key={match.id} />
+            <MatchesRow upcoming={false} {...match} key={match.id} />
           ))}
         </TableBody>
       </StyledTable>
     </StyledTableContainer>
   );
 }
+
+PastMatchesTable.prototype = {
+  past_matches: PropTypes.array,
+};

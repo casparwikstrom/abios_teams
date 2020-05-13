@@ -11,10 +11,6 @@ const PictureStyling = styled.div`
     height: 150px !important;
   }
 `;
-BannerPicture.propTypes = {
-  title: PropTypes.string,
-  image_url: PropTypes.string,
-};
 
 export default function BannerPicture(props) {
   return (
@@ -32,3 +28,8 @@ export default function BannerPicture(props) {
     </div>
   );
 }
+
+BannerPicture.propTypes = {
+  title: PropTypes.string,
+  image_url: PropTypes.string,
+};
