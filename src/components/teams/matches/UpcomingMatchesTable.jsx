@@ -34,8 +34,8 @@ export default function UpcomingMatchesTable(props) {
       <StyledTable className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="center"></TableCell>
-            <TableCell align="center">
+            <TableCell align="right"></TableCell>
+            <TableCell align="left">
               <h3>OPPONENT</h3>
             </TableCell>
             <TableCell align="center">

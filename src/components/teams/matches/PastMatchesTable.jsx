@@ -41,11 +41,11 @@ export default function PastMatchesTable(props) {
             <TableCell align="left">
               <h3>WIN/LOSS</h3>
             </TableCell>
-            <TableCell align="center"></TableCell>
+            <TableCell align="left"></TableCell>
             <TableCell align="center">
               <h3>OPPONENT</h3>
             </TableCell>
-            <TableCell align="center">
+            <TableCell align="right">
               <h3>DATE </h3>
             </TableCell>
             <TableCell align="center">

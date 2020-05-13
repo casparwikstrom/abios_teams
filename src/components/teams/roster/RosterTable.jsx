@@ -35,15 +35,15 @@ export default function RosterTable(props) {
       <StyledTable className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="left">
+            <TableCell align="right">
               <h3>NICK</h3>
             </TableCell>
-            <TableCell align="center"></TableCell>
+            <TableCell></TableCell>
             <TableCell align="center">
               <h3>NAME</h3>
             </TableCell>
             <TableCell align="center">
-              <h3>INFO</h3>
+              <h3>COUNTRY</h3>
             </TableCell>
             <TableCell align="center">
               <h3>POSITION</h3>

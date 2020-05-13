@@ -18,6 +18,7 @@ export const StatusFlag = styled.div`
     -webkit-transform: skew(-10deg);
     transform: skew(-10deg);
     color: rgb(249, 249, 249);
+    box-shadow: 3px 3px 4px rgba(224, 224, 224, 1);
   }
   .win {
     background: var(--my_green);
