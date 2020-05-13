@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 const NavbarStyle = styled.div`
     .navbar{
         position: fixed;
-        z-index: 5;
         display: flex;
         top: 0;
         left: 0;
@@ -19,6 +18,7 @@ const NavbarStyle = styled.div`
         /* color: white; */
         justify-content: space-evenly;
         align-items: center;
+        z-index:5;
         a{
             color: white;
             text-decoration: none;

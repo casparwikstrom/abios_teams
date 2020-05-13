@@ -8,8 +8,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import ResultsRow from "./ResultsRow";
-/*import Typography from '@material-ui/core/Typography';
-import ReactDOM from 'react-dom';*/
+import Typography from '@material-ui/core/Typography';
+import ReactDOM from 'react-dom';
+import styled from "styled-components";
 
 
 const useStyles = makeStyles({
@@ -18,22 +19,25 @@ const useStyles = makeStyles({
     },
 });
 
-/*name*/
-/*id*/
-/*status*/
-/*dcp*/
-/*logo*/
+const StyledTableContainer = styled(TableContainer)`
+  padding:20px;
+  background-color: rgb(226, 230, 244) !important;
+`;
+
+const StyledTable = styled(Table)`
+  padding:20px;
+  background-color: rgb(253, 253, 253) !important;
+`;
 
 export default function SimpleTable(props) {
     const classes = useStyles();
 
     return (
-        <TableContainer component={Paper}>
-            <Table className={classes.table} aria-label="simple table">
+        <StyledTableContainer component={Paper}>
+            <StyledTable className={classes.table} aria-label="simple table">
                 <TableHead>
-                    <TableRow>
+                    <TableRow classes={{ label: 'root' }}>
                         <TableCell align="left">Rank</TableCell>
-                        <TableCell align="left"> </TableCell>
                         <TableCell align="center">Name</TableCell>
                         <TableCell align="left">Status</TableCell>
                         <TableCell align="center">Points</TableCell>
@@ -41,10 +45,10 @@ export default function SimpleTable(props) {
                 </TableHead>
                 <TableBody>
                     {props.teams.map((team) => (
-                        <ResultsRow className="grow" team={team} key={team.id}/>
+                        <ResultsRow classes={{ label: 'root' }} team={team} key={team.id}/>
                     ))}
                 </TableBody>
-            </Table>
-        </TableContainer>
+            </StyledTable>
+        </StyledTableContainer>
     );
 }

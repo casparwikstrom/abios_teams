@@ -22,8 +22,6 @@ const TeamWrapper = styled.div`
 `
 
 function TeamPage() {
-    /*const history = useHistory();
-    const location = useLocation();*/
     const {id} = useParams();
     /*TODO*/
     /*const [error, setError] = useState(null);*/
@@ -32,7 +30,6 @@ function TeamPage() {
     const [team_info, setTeam] = useState([]);
     const [roster, setRoster] = useState({});
     const [past_matches, setPastMatches] = useState({});
-
     const [upcoming_matches, setMatches] = useState({});
 
     useEffect(() => {
@@ -48,11 +45,9 @@ function TeamPage() {
             })
     }, []);
 
-    console.log("past_matches past_matches past_matches", past_matches)
-
     return (
         <div>
-            {!loading && <Banner team_info={team_info} loading={loading}/>}
+            {!loading && <Banner title={team_info.info.name} image_url={team_info.picture}/>}
             {loading && <MyLoader/>}
             <TeamWrapper>
                 {!loading && <Container fixed>

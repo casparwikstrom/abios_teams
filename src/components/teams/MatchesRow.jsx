@@ -1,22 +1,18 @@
 import React from "react";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
-import styled from "styled-components";
+
 import {CalcWin, WinLossFlag} from "./Convertions";
-import {func} from "prop-types";
+import styled from 'styled-components';
+import {ConvertStatus} from "../teams/Convertions";
 
-/*function toDate(epoch) {
-    var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-    d.setUTCSeconds(epoch);
-    console.log("date is", d)
-    return d.toLocaleTimeString();
-}*/
+const StyledmatchesRow = styled(TableRow)`
+  border-bottom: 9px solid rgb(226, 230, 244) !important;
+  &:hover {
+    background-color: rgb(225, 229, 244);
+  }
+`;
 
-/*TODO CONVERT SCORE FOR -1*/
-/*function convertScore() {
-    if
-
-}*/
 
 function removeTime(time) {
     console.log("time", time)
@@ -32,7 +28,7 @@ export default function MatchesRow(props) {
     console.log("propspropspropspropsprops", props.match.upcoming)
 
     return (
-        <TableRow key={match.id}>
+        <StyledmatchesRow key={match.id}>
             {!is_upcoming &&(
                 <TableCell align="center" component="th" scope="row">
                     {WinLossFlag(CalcWin(match.team_score, match.opponent_score))}
@@ -49,7 +45,7 @@ export default function MatchesRow(props) {
             </TableCell>
             <TableCell align="center">{removeTime(match.date)}</TableCell>
             {!is_upcoming && (<TableCell align="center">{match.team_score}/{match.opponent_score}</TableCell>)}
-        </TableRow>
+        </StyledmatchesRow>
     );
 }
 
