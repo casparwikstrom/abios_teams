@@ -35,7 +35,7 @@ export default function RosterRow(props) {
             <TableCell align="center" >
                 <div>
                     <div>
-                        <img src={player.images.default} alt=""/>
+                        <img src={player.country.images.default} alt=""/>
                     </div>
                     <div>
                         {player.country.name}
@@ -51,30 +51,3 @@ export default function RosterRow(props) {
         </StyledRow>
     );
 }
-
-/*
-active: true
-country: {images: {…}, name: "China", short_name: "CN", region: {…}}
-deleted_at: null
-first_name: "Zhang"
-id: 10761
-images: {fallback: true, default: "https://img.abiosgaming.com/other/New-Abios-Place-Holder.png", thumbnail: "https://img.abiosgaming.com/other/thumbnails/New-Abios-Place-Holder.png"}
-last_name: "Ruida"
-nick_name: "Faith_Bian"
-race: null
-roles: (2) [{…}, {…}]
-social_media_accounts: []
-__proto__: Object*/
-
-/*display: flex;
-justify-content: space-around;
-/!* align-content: center; *!/
-/!* text-align: center; *!/
-/!* display: block; *!/
-/!* margin-left: auto; *!/
-/!* margin-right: auto; *!/
-text-align: center;
-/!* padding-bottom: 31%; *!/
-/!* margin-top: 1%; *!/
-padding-top: 20%;
-padding-bottom: 20%;*/
