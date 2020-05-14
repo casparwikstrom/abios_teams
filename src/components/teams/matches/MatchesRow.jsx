@@ -47,6 +47,7 @@ export default function MatchesRow(props) {
           align="center"
           component="th"
           scope="row"
+          data-testid="team_score"
         >
           <WinLossFlag
             status={calcWin(props.team_score, props.opponent_score)}
@@ -56,19 +57,22 @@ export default function MatchesRow(props) {
       <TableCell align="center">Vs</TableCell>
       <StyledMatchesCell align="center" className="opponent">
         <div>
-          <div>
+          <div data-testid="opponent-logo">
             <img src={props.opponent_logo} alt="" />
           </div>
-          <div>{props.opponent_name}</div>
+          <div data-testid="opponent-name">{props.opponent_name}</div>
         </div>
       </StyledMatchesCell>
-      <TableCell align={props.upcoming ? "center" : "right"}>
+      <TableCell data-testid="date" align={props.upcoming ? "center" : "right"}>
         {removeTime(props.date)}
       </TableCell>
       {!props.upcoming && (
         <StyledMatchesCell className="score" align="center">
           <div className="winner">
-            <div style={{ fontWeight: matchResult === "WIN" ? "bold" : "" }}>
+            <div
+              data-testid="team-score"
+              style={{ fontWeight: matchResult === "WIN" ? "bold" : "" }}
+            >
               {props.team_score}
             </div>
             <div className="dash">-</div>

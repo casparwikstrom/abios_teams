@@ -1,9 +1,17 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { Router } from "react-router-dom";
 import App from "./App";
+import { createMemoryHistory } from "history";
+import { render, fireEvent } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
 
-test("renders learn react link", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/dsadsadsa/i);
-  expect(linkElement).toBeInTheDocument();
+test("full app rendering/navigating", () => {
+  const history = createMemoryHistory();
+  const { container } = render(
+    <Router history={history}>
+      <App />
+    </Router>
+  );
+
+  expect(container.querySelector()).toMatch("The International Invitations");
 });
