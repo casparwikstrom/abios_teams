@@ -16,7 +16,7 @@ const StyledMatchesRow = styled(TableRow)`
 const StyledMatchesCell = styled(TableCell)`
   width: 10%;
   .opponent {
-    width: 10%;
+    width: 20% !important;
   }
   .score {
     display: flex;
@@ -30,6 +30,18 @@ const StyledMatchesCell = styled(TableCell)`
     padding-left: 2px;
     padding-right: 2px;
   }
+  .team {
+    display: flex;
+    align-items: center;
+  }
+  .team_name {
+    width: 120px !important;
+    padding-left: 10px;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    &:hover {
+      color: rgb(143, 148, 252);
+    }
 `;
 
 function removeTime(time) {
@@ -40,7 +52,7 @@ export default function MatchesRow(props) {
   const matchResult = calcWin(props.team_score, props.opponent_score);
 
   return (
-    <StyledMatchesRow key={props.id}>
+    <StyledMatchesRow key={props.team_id}>
       {!props.upcoming && (
         <StyledMatchesCell
           className="team"
@@ -56,12 +68,14 @@ export default function MatchesRow(props) {
       )}
       <TableCell align="center">Vs</TableCell>
       <StyledMatchesCell align="center" className="opponent">
-        <div>
-          <div data-testid="opponent-logo">
-            <img src={props.opponent_logo} alt="" />
+        <a className="team" href={"/team/" + props.opponent_id}>
+          <div data-testid="logo">
+            <img src={props.opponent_logo} alt="" align={"left"} />
           </div>
-          <div data-testid="opponent-name">{props.opponent_name}</div>
-        </div>
+          <div data-testid="name" className="team_name" align={"left"}>
+            {props.opponent_name}
+          </div>
+        </a>
       </StyledMatchesCell>
       <TableCell data-testid="date" align={props.upcoming ? "center" : "right"}>
         {removeTime(props.date)}
@@ -88,7 +102,8 @@ export default function MatchesRow(props) {
 
 MatchesRow.prototype = {
   upcoming: PropTypes.bool,
-  id: PropTypes.number,
+  team_id: PropTypes.number,
+  opponent_id: PropTypes.number,
   team_score: PropTypes.number,
   opponent_logo: PropTypes.string,
   opponent_name: PropTypes.string,

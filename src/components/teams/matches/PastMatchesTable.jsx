@@ -29,7 +29,8 @@ const StyledTable = styled(Table)`
 
 export default function PastMatchesTable(props) {
   const past_matches = props.past_matches;
-  console.log("past_matches", props);
+
+  console.log("past_matchespast_matches", props);
 
   const classes = useStyles();
 
