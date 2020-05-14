@@ -33,7 +33,7 @@ export default function ResultsTable(props) {
     <StyledTableContainer component={Paper}>
       <StyledTable className={classes.table} aria-label="simple table">
         <TableHead>
-          <TableRow classes={{ label: "root" }}>
+          <TableRow>
             <TableCell align="center">
               <h3>RANK</h3>
             </TableCell>

@@ -20,29 +20,36 @@ const StyledResultsRow = styled(TableRow)`
   }
   .team_name {
     padding-left: 10px;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    &:hover {
+      color: rgb(143, 148, 252);
+    }
   }
 `;
 
 export default function ResultsRow(props) {
   return (
-    <StyledResultsRow key={props.id} component="a" href={"/team/" + props.id}>
-      <TableCell align={"center"} scope="row">
+    <StyledResultsRow key={props.id}>
+      <TableCell data-testid="rank-cell" align={"center"} scope="row">
         {props.rank}
       </TableCell>
-      <TableCell borderRadius={16} align="center">
-        <div className="team">
-          <div>
+      <TableCell borderradius={16} align="center">
+        <a className="team" href={"/team/" + props.id}>
+          <div data-testid="logo">
             <img src={props.logo} alt="" align={"left"} />
           </div>
-          <div className="team_name" align={"left"}>
+          <div data-testid="name" className="team_name" align={"left"}>
             {props.name}
           </div>
-        </div>
+        </a>
       </TableCell>
-      <TableCell align="right">
+      <TableCell data-testid={"status"} align="right">
         <InvitationFlag status={props.status} />
       </TableCell>
-      <TableCell align="right">{props.dcp}</TableCell>
+      <TableCell data-testid="dcp" align="right">
+        {props.dcp}
+      </TableCell>
     </StyledResultsRow>
   );
 }

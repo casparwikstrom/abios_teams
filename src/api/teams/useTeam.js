@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { apiFetch } from "../apiFetch";
 
 function toTeam(data) {
-  console.log("datadatadatadatadatadatadatadata", data);
   return {
     matches: {
       past_matches: data.past_matches,
@@ -31,6 +30,6 @@ export function useTeam(id) {
       setTeam(parsedTeam);
       setIsLoading(false);
     });
-  }, []);
+  }, [teamUrl]);
   return { isLoading, team };
 }

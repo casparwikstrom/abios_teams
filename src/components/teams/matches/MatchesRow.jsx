@@ -16,7 +16,7 @@ const StyledMatchesRow = styled(TableRow)`
 const StyledMatchesCell = styled(TableCell)`
   width: 10%;
   .opponent {
-    width: 10%;
+    width: 20% !important;
   }
   .score {
     display: flex;
@@ -30,6 +30,18 @@ const StyledMatchesCell = styled(TableCell)`
     padding-left: 2px;
     padding-right: 2px;
   }
+  .team {
+    display: flex;
+    align-items: center;
+  }
+  .team_name {
+    width: 120px !important;
+    padding-left: 10px;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    &:hover {
+      color: rgb(143, 148, 252);
+    }
 `;
 
 function removeTime(time) {
@@ -38,15 +50,15 @@ function removeTime(time) {
 
 export default function MatchesRow(props) {
   const matchResult = calcWin(props.team_score, props.opponent_score);
-
   return (
-    <StyledMatchesRow key={props.id}>
+    <StyledMatchesRow key={props.team_id}>
       {!props.upcoming && (
         <StyledMatchesCell
           className="team"
           align="center"
           component="th"
           scope="row"
+          data-testid="team_score"
         >
           <WinLossFlag
             status={calcWin(props.team_score, props.opponent_score)}
@@ -55,20 +67,30 @@ export default function MatchesRow(props) {
       )}
       <TableCell align="center">Vs</TableCell>
       <StyledMatchesCell align="center" className="opponent">
-        <div>
+        <a className="team" href={"/team/" + props.opponent_id}>
           <div>
-            <img src={props.opponent_logo} alt="" />
+            <img
+              data-testid="opponent-logo"
+              src={props.opponent_logo}
+              alt=""
+              align={"left"}
+            />
           </div>
-          <div>{props.opponent_name}</div>
-        </div>
+          <div data-testid="opponent-name" className="team_name" align={"left"}>
+            {props.opponent_name}
+          </div>
+        </a>
       </StyledMatchesCell>
-      <TableCell align={props.upcoming ? "center" : "right"}>
+      <TableCell data-testid="date" align={props.upcoming ? "center" : "right"}>
         {removeTime(props.date)}
       </TableCell>
       {!props.upcoming && (
-        <StyledMatchesCell className="score" align="center">
+        <StyledMatchesCell data-testid="score" className="score" align="center">
           <div className="winner">
-            <div style={{ fontWeight: matchResult === "WIN" ? "bold" : "" }}>
+            <div
+              data-testid="team-score"
+              style={{ fontWeight: matchResult === "WIN" ? "bold" : "" }}
+            >
               {props.team_score}
             </div>
             <div className="dash">-</div>
@@ -84,7 +106,8 @@ export default function MatchesRow(props) {
 
 MatchesRow.prototype = {
   upcoming: PropTypes.bool,
-  id: PropTypes.number,
+  team_id: PropTypes.number,
+  opponent_id: PropTypes.number,
   team_score: PropTypes.number,
   opponent_logo: PropTypes.string,
   opponent_name: PropTypes.string,

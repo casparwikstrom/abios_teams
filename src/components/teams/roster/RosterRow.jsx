@@ -35,9 +35,7 @@ export default function RosterRow(props) {
       <StyledCell component="th" scope="row" className="avatar" align="center">
         <img className="avatar" src={props.images.default} alt="" />
       </StyledCell>
-
       <StyledCell align="left">{props.nick_name}</StyledCell>
-
       <TableCell align="center">
         {props.first_name} {props.last_name}
       </TableCell>
@@ -50,9 +48,9 @@ export default function RosterRow(props) {
         </div>
       </StyledCell>
       <TableCell align="center">
-        {props.roles.map((role) => (
-          <div key={role.name}>{convertRole(role.name)} </div>
-        ))}
+        <div>
+          {convertRole(props.roles.length > 0 ? props.roles[0].name : null)}
+        </div>
       </TableCell>
     </StyledRosterRow>
   );
@@ -65,4 +63,5 @@ RosterRow.proptype = {
   last_name: Proptypes.string,
   country: Proptypes.object,
   roles: Proptypes.array,
+  id: Proptypes.number,
 };

@@ -30,9 +30,13 @@ code {
     font-family: Raleway,
     monospace;
 }
-/** {
+
+/*
+* {
     border: 1px solid red;
-}*/
+}
+*/
+
 
 .MuiContainer-root {
     padding-top: 2%;

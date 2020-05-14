@@ -49,7 +49,7 @@ export default function TeamTabs(props) {
           value={value}
           onChange={handleChange}
           aria-label="simple tabs example"
-          color="blue"
+          color="blues"
         >
           <Tab label="Roster" {...a11yProps(0)} />
           <Tab label="Upcoming Matches" {...a11yProps(1)} />
