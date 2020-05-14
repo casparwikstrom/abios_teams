@@ -11,9 +11,10 @@ const FooterStyle = styled.div`
     background: #262730;
     border-bottom: 1px solid #21222b;
     height: 200px;
-    /* color: white; */
     justify-content: space-evenly;
     align-items: center;
+    color: rgb(249, 249, 249);
+    font-family: "Nunito Sans", sans-serif;
     a {
       color: white;
       text-decoration: none;

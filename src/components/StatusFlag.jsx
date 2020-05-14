@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const StatusFlag = styled.div`
   .win_loss {
-    float: left;
-    background: #49bb47;
+    float: right;
     border-radius: 2px;
     padding: 7px 9px;
     margin: 8px 0 8px 10px;
@@ -18,14 +17,16 @@ export const StatusFlag = styled.div`
     -webkit-backface-visibility: hidden;
     -webkit-transform: skew(-10deg);
     transform: skew(-10deg);
+    color: rgb(249, 249, 249);
+    box-shadow: 3px 3px 4px rgba(224, 224, 224, 1);
   }
   .win {
-    background: green;
+    background: var(--my_green);
   }
   .tie {
-    background: blue;
+    background: var(--my_blue);
   }
   .loss {
-    background: red;
+    background: var(--my_red);
   }
 `;

@@ -12,6 +12,7 @@ const StyledImage = styled.div`
         width: 100%;
         height: 100%;
         background: rgba(38,38,47,0.35);
+        z-index: -1;
     }
     .banner {
         background-color: #1f2026;
@@ -25,7 +26,7 @@ const StyledImage = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        z-index: 1;
    }
 }
 `;

@@ -1,31 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+
 body {
     margin: 0;
-    font-family: -apple-system, Raleway;
+    font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: rgb(244, 248, 250);
 }
 
+p {
+    font-family: Raleway
+}
+
+h3 {
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+:root {
+    --my_blue: rgb(0, 128, 255);
+    --my_red: rgb(210, 31, 60);
+    --my_green: rgb(80, 220, 100);
+    --my_white: rgb(249, 249, 249);
+}
+
+
 code {
     font-family: Raleway,
     monospace;
 }
-
 /** {
     border: 1px solid red;
 }*/
 
-img {
-    height: 40px !important;
-   /* border-radius: 119px;
-    width: 40px;*/
-}
-
-h2 {
-    margin: 0px !important;
-}
-
 .MuiContainer-root {
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.MuiTableCell-root{
+    padding: 3px 10px 3px 10px !important;
 }

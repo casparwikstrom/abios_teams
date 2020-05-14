@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../assets/dota.png";
 import PropTypes from "prop-types";
 
 const PictureStyling = styled.div`
@@ -9,6 +8,11 @@ const PictureStyling = styled.div`
   }
   img {
     height: 150px !important;
+  }
+  h2 {
+    letter-spacing: 1.5px;
+    font-weight: 600 !important;
+    font-family: Raleway !important;
   }
 `;
 
