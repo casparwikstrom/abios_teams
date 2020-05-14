@@ -29,9 +29,6 @@ const StyledTable = styled(Table)`
 
 export default function PastMatchesTable(props) {
   const past_matches = props.past_matches;
-
-  console.log("past_matchespast_matches", props);
-
   const classes = useStyles();
 
   return (
@@ -39,17 +36,17 @@ export default function PastMatchesTable(props) {
       <StyledTable className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="center">
+            <TableCell data-testid="win_loss" align="center">
               <h3>WIN/LOSS</h3>
             </TableCell>
             <TableCell align="left" />
-            <TableCell align="center">
+            <TableCell data-testid="opponent" align="center">
               <h3>OPPONENT</h3>
             </TableCell>
-            <TableCell align="right">
-              <h3>DATE </h3>
+            <TableCell data-testid="date" align="right">
+              <h3>DATE</h3>
             </TableCell>
-            <TableCell align="center">
+            <TableCell data-testid="score" align="center">
               <h3>SCORE</h3>
             </TableCell>
           </TableRow>

@@ -69,10 +69,15 @@ export default function MatchesRow(props) {
       <TableCell align="center">Vs</TableCell>
       <StyledMatchesCell align="center" className="opponent">
         <a className="team" href={"/team/" + props.opponent_id}>
-          <div data-testid="logo">
-            <img src={props.opponent_logo} alt="" align={"left"} />
+          <div>
+            <img
+              data-testid="opponent-logo"
+              src={props.opponent_logo}
+              alt=""
+              align={"left"}
+            />
           </div>
-          <div data-testid="name" className="team_name" align={"left"}>
+          <div data-testid="opponent-name" className="team_name" align={"left"}>
             {props.opponent_name}
           </div>
         </a>
@@ -81,7 +86,7 @@ export default function MatchesRow(props) {
         {removeTime(props.date)}
       </TableCell>
       {!props.upcoming && (
-        <StyledMatchesCell className="score" align="center">
+        <StyledMatchesCell data-testid="score" className="score" align="center">
           <div className="winner">
             <div
               data-testid="team-score"

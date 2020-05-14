@@ -18,8 +18,9 @@ afterEach(() => {
 
 const test_props = {
   opponent_logo: "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
-  opponent_name: "Test name",
+  opponent_name: "Test opponent_name",
   date: "2019-01-22 02:00:00",
+  score: "0 - 2",
 };
 
 it("row has some variables", () => {
@@ -28,14 +29,13 @@ it("row has some variables", () => {
   });
 
   const opponent_name = getByTestId(container, "opponent-name");
-  const logo = getByTestId(container, "opponent-logo");
+  const opponent_logo = getByTestId(container, "opponent-logo");
   const date = getByTestId(container, "date");
 
-  /*expect(id.textContent).toBe(1);
-expect(rank.textContent).toBe(2);
-expect(name.textContent).toBe("Test name");
-expect(status.textContent).toBe("Test Status");
-expect(dcp.textContent).toBe(1337);*/
-
-  expect(logo.getAttribute("src")).toBeDefined();
+  expect(opponent_logo.getAttribute("src")).toBeDefined();
+  expect(opponent_logo.getAttribute("src")).toBe(
+    "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png"
+  );
+  expect(opponent_name.textContent).toBe("Test opponent_name");
+  expect(date.textContent).toBe("2019-01-22");
 });

@@ -1,1 +1,454 @@
-{"team_data": [{"coach": null, "name": "Virtus.pro", "active": true, "deleted_at": null, "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/virtus-pro-vp-oldnt-logo.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/virtus-pro-vp-oldnt-logo.png"}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/virtuspro"}, {"slug": "facebook", "name": "Facebook", "url": "https://www.facebook.com/www.virtus.pro"}, {"slug": "twitch", "name": "Twitch", "url": "https://www.twitch.tv/virtuspro"}], "country": {"images": {"default": "https://img.abiosgaming.com/flags/Russia.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"}, "name": "Russia", "short_name": "RU", "region": {"name": "Europe", "id": 1, "short_name": "EU"}}, "id": 31, "short_name": "VP"}], "players": [{"country": {"images": {"default": "https://img.abiosgaming.com/flags/Russia.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"}, "name": "Russia", "short_name": "RU", "region": {"name": "Europe", "id": 1, "short_name": "EU"}}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/9pashka"}, {"slug": "twitch", "name": "Twitch", "url": "https://www.twitch.tv/9pasha"}], "roles": [{"from": "2013-03-14", "name": "3", "to": null}], "active": true, "deleted_at": null, "first_name": "Pavel", "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/9pasha-player-picture.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/9pasha-player-picture.png"}, "race": null, "last_name": "Khvastunov", "id": 7645, "nick_name": "9pasha"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/Ukraine.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Ukraine.png"}, "name": "Ukraine", "short_name": "UA", "region": {"name": "Europe", "id": 1, "short_name": "EU"}}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/Noone_dota"}, {"slug": "twitch", "name": "Twitch", "url": "https://www.twitch.tv/nooneboss"}], "roles": [{"from": "2013-03-14", "name": "2", "to": null}], "active": true, "deleted_at": null, "first_name": "Vladimir", "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/noone-dota2-ukr-vladimir-minenko.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/noone-dota2-ukr-vladimir-minenko.png"}, "race": null, "last_name": "Minenko", "id": 7646, "nick_name": "No[o]ne"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/Russia.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"}, "name": "Russia", "short_name": "RU", "region": {"name": "Europe", "id": 1, "short_name": "EU"}}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/dotaSolo"}, {"slug": "twitch", "name": "Twitch", "url": "https://www.twitch.tv/sololineabuse"}], "roles": [{"from": "2013-03-14", "name": "5", "to": null}], "active": true, "deleted_at": null, "first_name": "Alexei", "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/solo-dota2-RUS-alexei-berezin.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/solo-dota2-RUS-alexei-berezin.png"}, "race": null, "last_name": "Berezin", "id": 7648, "nick_name": "Solo"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/Russia.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"}, "name": "Russia", "short_name": "RU", "region": {"name": "Europe", "id": 1, "short_name": "EU"}}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/ramzesdoto"}, {"slug": "twitch", "name": "Twitch", "url": "https://www.twitch.tv/ramzesdoto"}], "roles": [{"from": "2013-03-14", "name": "1", "to": null}], "active": true, "deleted_at": null, "first_name": "Roman", "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/ramzes666-dota2-RUS-roman-kushnarev.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/ramzes666-dota2-RUS-roman-kushnarev.png"}, "race": null, "last_name": "Kushnarev", "id": 10730, "nick_name": "RAMZES666"}, {"country": {"images": {"default": "https://img.abiosgaming.com/flags/Russia.png", "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"}, "name": "Russia", "short_name": "RU", "region": {"name": "Europe", "id": 1, "short_name": "EU"}}, "social_media_accounts": [{"slug": "twitter", "name": "Twitter", "url": "https://twitter.com/rodjerdota"}, {"slug": "twitch", "name": "Twitch", "url": "https://www.twitch.tv/rodjer"}], "roles": [{"from": "2018-03-08", "name": "4", "to": null}, {"from": "2013-03-14", "name": "5", "to": "2018-03-07"}], "active": true, "deleted_at": null, "first_name": "Vladimir", "images": {"fallback": false, "default": "https://img.abiosgaming.com/competitors/rodjer-dota2-RUS-vladimir-nikogosyan.png", "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/rodjer-dota2-RUS-vladimir-nikogosyan.png"}, "race": null, "last_name": "Nikogosyan", "id": 23588, "nick_name": "RodjER"}], "team_id": 33618, "upcoming_matches": [{"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Vici Gaming", "date": "2022-03-24 16:42:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Vici-gaming-2017.png", "id": 189335, "opponent_id": 42642, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Fnatic", "date": "2022-03-24 12:33:32", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Fnatic-logo.png", "id": 189343, "opponent_id": 42895, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Team Secret", "date": "2022-03-23 16:43:17", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png", "id": 189344, "opponent_id": 42708, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "PSG.LGD", "date": "2022-03-23 09:40:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/LGD-PSG-LOGO.png", "id": 189346, "opponent_id": 32674, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Evil Geniuses", "date": "2022-03-20 14:57:31", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Evil-Geniuses-EG.png", "id": 189348, "opponent_id": 37949, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Chaos Esports Club ", "date": "2022-03-19 15:07:01", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Chaos-Esports-Club-US.png", "id": 189352, "opponent_id": 46961, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Fnatic", "date": "2022-03-17 18:52:34", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Fnatic-logo.png", "id": 189342, "opponent_id": 42895, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Mineski", "date": "2022-03-15 12:30:03", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Mineski-clean-logo-new.png", "id": 189327, "opponent_id": 47571, "team_score": -1}, {"team_name": "Virtus.pro", "opponent_score": -1, "team_id": 33618, "opponent_name": "Forward Gaming ", "date": "2022-03-14 12:30:03", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Forward-gaming.png", "id": 189325, "opponent_id": 42882, "team_score": -1}], "past_matches": [{"team_name": "Virtus.pro", "opponent_score": 3, "team_id": 33618, "opponent_name": "Team Secret", "date": "2019-01-27 08:51:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png", "id": 182737, "opponent_id": 42708, "team_score": 1}, {"team_name": "Virtus.pro", "opponent_score": 1, "team_id": 33618, "opponent_name": "Team Secret", "date": "2019-01-25 11:32:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png", "id": 182732, "opponent_id": 42708, "team_score": 2}, {"team_name": "Virtus.pro", "opponent_score": 0, "team_id": 33618, "opponent_name": "PSG.LGD", "date": "2019-01-22 07:52:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/LGD-PSG-LOGO.png", "id": 182733, "opponent_id": 32674, "team_score": 2}, {"team_name": "Virtus.pro", "opponent_score": 0, "team_id": 33618, "opponent_name": "Evil Geniuses", "date": "2019-01-21 08:00:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Evil-Geniuses-EG.png", "id": 182740, "opponent_id": 37949, "team_score": 2}, {"team_name": "Virtus.pro", "opponent_score": 1, "team_id": 33618, "opponent_name": "TNC Predator", "date": "2019-01-19 05:30:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/TNC-pro-team-new-logo.png", "id": 182712, "opponent_id": 45953, "team_score": 2}, {"team_name": "Virtus.pro", "opponent_score": 1, "team_id": 33618, "opponent_name": "EHOME", "date": "2019-01-19 02:00:00", "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png", "id": 182714, "opponent_id": 42819, "team_score": 2}]}
+{
+  "team_data": [
+    {
+      "coach": null,
+      "name": "Virtus.pro",
+      "active": true,
+      "deleted_at": null,
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/virtus-pro-vp-oldnt-logo.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/virtus-pro-vp-oldnt-logo.png"
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/virtuspro"
+        },
+        {
+          "slug": "facebook",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/www.virtus.pro"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/virtuspro"
+        }
+      ],
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "name": "Russia",
+        "short_name": "RU",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "id": 31,
+      "short_name": "VP"
+    }
+  ],
+  "players": [
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "name": "Russia",
+        "short_name": "RU",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/9pashka"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/9pasha"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "3",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Pavel",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/9pasha-player-picture.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/9pasha-player-picture.png"
+      },
+      "race": null,
+      "last_name": "Khvastunov",
+      "id": 7645,
+      "nick_name": "9pasha"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Ukraine.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Ukraine.png"
+        },
+        "name": "Ukraine",
+        "short_name": "UA",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/Noone_dota"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/nooneboss"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "2",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Vladimir",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/noone-dota2-ukr-vladimir-minenko.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/noone-dota2-ukr-vladimir-minenko.png"
+      },
+      "race": null,
+      "last_name": "Minenko",
+      "id": 7646,
+      "nick_name": "No[o]ne"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "name": "Russia",
+        "short_name": "RU",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/dotaSolo"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/sololineabuse"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "5",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Alexei",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/solo-dota2-RUS-alexei-berezin.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/solo-dota2-RUS-alexei-berezin.png"
+      },
+      "race": null,
+      "last_name": "Berezin",
+      "id": 7648,
+      "nick_name": "Solo"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "name": "Russia",
+        "short_name": "RU",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/ramzesdoto"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/ramzesdoto"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2013-03-14",
+          "name": "1",
+          "to": null
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Roman",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/ramzes666-dota2-RUS-roman-kushnarev.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/ramzes666-dota2-RUS-roman-kushnarev.png"
+      },
+      "race": null,
+      "last_name": "Kushnarev",
+      "id": 10730,
+      "nick_name": "RAMZES666"
+    },
+    {
+      "country": {
+        "images": {
+          "default": "https://img.abiosgaming.com/flags/Russia.png",
+          "thumbnail": "https://img.abiosgaming.com/flags/thumbnails/Russia.png"
+        },
+        "name": "Russia",
+        "short_name": "RU",
+        "region": {
+          "name": "Europe",
+          "id": 1,
+          "short_name": "EU"
+        }
+      },
+      "social_media_accounts": [
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "url": "https://twitter.com/rodjerdota"
+        },
+        {
+          "slug": "twitch",
+          "name": "Twitch",
+          "url": "https://www.twitch.tv/rodjer"
+        }
+      ],
+      "roles": [
+        {
+          "from": "2018-03-08",
+          "name": "4",
+          "to": null
+        },
+        {
+          "from": "2013-03-14",
+          "name": "5",
+          "to": "2018-03-07"
+        }
+      ],
+      "active": true,
+      "deleted_at": null,
+      "first_name": "Vladimir",
+      "images": {
+        "fallback": false,
+        "default": "https://img.abiosgaming.com/competitors/rodjer-dota2-RUS-vladimir-nikogosyan.png",
+        "thumbnail": "https://img.abiosgaming.com/competitors/thumbnails/rodjer-dota2-RUS-vladimir-nikogosyan.png"
+      },
+      "race": null,
+      "last_name": "Nikogosyan",
+      "id": 23588,
+      "nick_name": "RodjER"
+    }
+  ],
+  "team_id": 33618,
+  "upcoming_matches": [
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Vici Gaming",
+      "date": "2022-03-24 16:42:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Vici-gaming-2017.png",
+      "id": 189335,
+      "opponent_id": 42642,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Fnatic",
+      "date": "2022-03-24 12:33:32",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Fnatic-logo.png",
+      "id": 189343,
+      "opponent_id": 42895,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Team Secret",
+      "date": "2022-03-23 16:43:17",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png",
+      "id": 189344,
+      "opponent_id": 42708,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "PSG.LGD",
+      "date": "2022-03-23 09:40:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/LGD-PSG-LOGO.png",
+      "id": 189346,
+      "opponent_id": 32674,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Evil Geniuses",
+      "date": "2022-03-20 14:57:31",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Evil-Geniuses-EG.png",
+      "id": 189348,
+      "opponent_id": 37949,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Chaos Esports Club ",
+      "date": "2022-03-19 15:07:01",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Chaos-Esports-Club-US.png",
+      "id": 189352,
+      "opponent_id": 46961,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Fnatic",
+      "date": "2022-03-17 18:52:34",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Fnatic-logo.png",
+      "id": 189342,
+      "opponent_id": 42895,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Mineski",
+      "date": "2022-03-15 12:30:03",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Mineski-clean-logo-new.png",
+      "id": 189327,
+      "opponent_id": 47571,
+      "team_score": -1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": -1,
+      "team_id": 33618,
+      "opponent_name": "Forward Gaming ",
+      "date": "2022-03-14 12:30:03",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Forward-gaming.png",
+      "id": 189325,
+      "opponent_id": 42882,
+      "team_score": -1
+    }
+  ],
+  "past_matches": [
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": 3,
+      "team_id": 33618,
+      "opponent_name": "Team Secret",
+      "date": "2019-01-27 08:51:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png",
+      "id": 182737,
+      "opponent_id": 42708,
+      "team_score": 1
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": 1,
+      "team_id": 33618,
+      "opponent_name": "Team Secret",
+      "date": "2019-01-25 11:32:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Team-Secret.png",
+      "id": 182732,
+      "opponent_id": 42708,
+      "team_score": 2
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": 0,
+      "team_id": 33618,
+      "opponent_name": "PSG.LGD",
+      "date": "2019-01-22 07:52:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/LGD-PSG-LOGO.png",
+      "id": 182733,
+      "opponent_id": 32674,
+      "team_score": 2
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": 0,
+      "team_id": 33618,
+      "opponent_name": "Evil Geniuses",
+      "date": "2019-01-21 08:00:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/Evil-Geniuses-EG.png",
+      "id": 182740,
+      "opponent_id": 37949,
+      "team_score": 2
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": 1,
+      "team_id": 33618,
+      "opponent_name": "TNC Predator",
+      "date": "2019-01-19 05:30:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/TNC-pro-team-new-logo.png",
+      "id": 182712,
+      "opponent_id": 45953,
+      "team_score": 2
+    },
+    {
+      "team_name": "Virtus.pro",
+      "opponent_score": 1,
+      "team_id": 33618,
+      "opponent_name": "EHOME",
+      "date": "2019-01-19 02:00:00",
+      "opponent_logo": "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
+      "id": 182714,
+      "opponent_id": 42819,
+      "team_score": 2
+    }
+  ]
+}
