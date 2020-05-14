@@ -7,8 +7,6 @@ import Proptypes from "prop-types";
 
 const StyledCell = styled(TableCell)`
   width: 20% !important;
-  background-color: rgb(253, 253, 253) !important;
-  border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
   img {
     height: 40px;
     width: 40px;
@@ -22,15 +20,18 @@ const StyledCell = styled(TableCell)`
   }
 `;
 
-const StyledRow = styled(TableRow)`
+const StyledRosterRow = styled(TableRow)`
   text-decoration: none;
-  background-color: rgb(253, 253, 253) !important;
-  border-bottom: 5px solid rgba(226, 230, 244, 1) !important;
+  border-top: 9px solid rgb(226, 230, 244) !important;
+  text-decoration: none;
+  &:hover {
+    background-color: rgb(225, 229, 244);
+  }
 `;
 
 export default function RosterRow(props) {
   return (
-    <StyledRow key={props.id}>
+    <StyledRosterRow key={props.id}>
       <StyledCell component="th" scope="row" className="avatar" align="center">
         <img className="avatar" src={props.images.default} alt="" />
       </StyledCell>
@@ -53,7 +54,7 @@ export default function RosterRow(props) {
           <div key={role.name}>{convertRole(role.name)} </div>
         ))}
       </TableCell>
-    </StyledRow>
+    </StyledRosterRow>
   );
 }
 

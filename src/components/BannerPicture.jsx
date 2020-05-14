@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../assets/dota.png";
 import PropTypes from "prop-types";
 
 const PictureStyling = styled.div`

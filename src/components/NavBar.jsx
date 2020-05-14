@@ -29,6 +29,7 @@ const NavbarStyle = styled.div`
       width: 67%;
       float: left;
       display: flex;
+      font-weight: 600 !important;
     }
   }
 `;

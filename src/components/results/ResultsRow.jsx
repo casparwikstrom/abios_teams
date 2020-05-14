@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import { InvitationFlag } from "./InvitationFlag";
 
 const StyledResultsRow = styled(TableRow)`
-  border-bottom: 9px solid rgb(226, 230, 244) !important;
+  border-top: 9px solid rgb(226, 230, 244) !important;
   text-decoration: none;
   &:hover {
     background-color: rgb(225, 229, 244);
@@ -14,24 +14,35 @@ const StyledResultsRow = styled(TableRow)`
   td {
     text-decoration: none !important;
   }
+  .team {
+    display: flex;
+    align-items: center;
+  }
+  .team_name {
+    padding-left: 10px;
+  }
 `;
 
 export default function ResultsRow(props) {
   return (
     <StyledResultsRow key={props.id} component="a" href={"/team/" + props.id}>
-      <TableCell scope="row">{props.rank}</TableCell>
+      <TableCell align={"center"} scope="row">
+        {props.rank}
+      </TableCell>
       <TableCell borderRadius={16} align="center">
-        <div>
+        <div className="team">
           <div>
-            <img src={props.logo} alt="" />
+            <img src={props.logo} alt="" align={"left"} />
           </div>
-          <div>{props.name}</div>
+          <div className="team_name" align={"left"}>
+            {props.name}
+          </div>
         </div>
       </TableCell>
-      <TableCell align="center">
+      <TableCell align="right">
         <InvitationFlag status={props.status} />
       </TableCell>
-      <TableCell align="center">{props.dcp}</TableCell>
+      <TableCell align="right">{props.dcp}</TableCell>
     </StyledResultsRow>
   );
 }

@@ -30,22 +30,15 @@ code {
     font-family: Raleway,
     monospace;
 }
-
 /** {
     border: 1px solid red;
 }*/
-
-img {
-    /*height: 40px !important;*/
-    /* border-radius: 119px;
-    width: 40px;*/
-}
 
 .MuiContainer-root {
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
-.footer {
-
+.MuiTableCell-root{
+    padding: 3px 10px 3px 10px !important;
 }

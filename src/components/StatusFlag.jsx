@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StatusFlag = styled.div`
   .win_loss {
-    float: left;
+    float: right;
     border-radius: 2px;
     padding: 7px 9px;
     margin: 8px 0 8px 10px;
