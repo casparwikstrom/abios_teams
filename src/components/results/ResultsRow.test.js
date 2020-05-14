@@ -21,7 +21,7 @@ const test_props = {
   rank: 2,
   logo: "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
   name: "Test name",
-  status: "Test Status",
+  status: "QUALIFIED",
   dcp: 1337,
 };
 
@@ -31,17 +31,16 @@ it("row has some variables", () => {
   });
 
   const rank = getByTestId(container, "rank-cell");
-  const id = getByTestId(container, "id");
   const logo = getByTestId(container, "logo");
   const name = getByTestId(container, "name");
   const status = getByTestId(container, "status");
   const dcp = getByTestId(container, "dcp");
 
-  expect(id.textContent).toBe(1);
-  expect(rank.textContent).toBe(2);
+  expect(rank.textContent).toBe("2");
   expect(name.textContent).toBe("Test name");
-  expect(status.textContent).toBe("Test Status");
-  expect(dcp.textContent).toBe(1337);
+  expect(status.textContent).toBe("Currently Qualified");
+  expect(dcp.textContent).toBe("1337");
+  expect(dcp.textContent).toBe("1337");
 
   expect(logo.getAttribute("src")).toBeDefined();
 });

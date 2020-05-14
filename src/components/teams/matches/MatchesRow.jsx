@@ -50,7 +50,6 @@ function removeTime(time) {
 
 export default function MatchesRow(props) {
   const matchResult = calcWin(props.team_score, props.opponent_score);
-
   return (
     <StyledMatchesRow key={props.team_id}>
       {!props.upcoming && (

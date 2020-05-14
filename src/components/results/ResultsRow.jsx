@@ -30,7 +30,7 @@ const StyledResultsRow = styled(TableRow)`
 
 export default function ResultsRow(props) {
   return (
-    <StyledResultsRow data-testid="id" key={props.id}>
+    <StyledResultsRow key={props.id}>
       <TableCell data-testid="rank-cell" align={"center"} scope="row">
         {props.rank}
       </TableCell>
@@ -45,7 +45,7 @@ export default function ResultsRow(props) {
         </a>
       </TableCell>
       <TableCell data-testid={"status"} align="right">
-        <InvitationFlag data-testid={"status"} status={props.status} />
+        <InvitationFlag status={props.status} />
       </TableCell>
       <TableCell data-testid="dcp" align="right">
         {props.dcp}

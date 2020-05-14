@@ -1,9 +1,7 @@
 import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
-import { getByTestId } from "@testing-library/dom";
 import { act } from "react-dom/test-utils";
 import RosterRow from "./RosterRow";
-import Proptypes from "prop-types";
 
 let container = null;
 beforeEach(() => {
@@ -22,9 +20,17 @@ const test_props = {
   default: "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
   first_name: "caspar",
   last_name: "wikström",
-  country: "sweden",
+  country: {
+    name: "sweden",
+    images: {
+      default: "test_country_image",
+    },
+  },
   roles: [3],
   id: 1337,
+  images: {
+    default: "test_image",
+  },
 };
 
 it("row has some variables", () => {
