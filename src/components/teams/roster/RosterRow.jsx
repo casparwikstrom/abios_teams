@@ -33,7 +33,12 @@ export default function RosterRow(props) {
   return (
     <StyledRosterRow key={props.id}>
       <StyledCell component="th" scope="row" className="avatar" align="center">
-        <img className="avatar" src={props.images.default} alt="" />
+        <img
+          data-testid="avatar"
+          className="avatar"
+          src={props.images.default}
+          alt=""
+        />
       </StyledCell>
       <StyledCell align="left">{props.nick_name}</StyledCell>
       <TableCell align="center">
@@ -42,9 +47,9 @@ export default function RosterRow(props) {
       <StyledCell align="center">
         <div>
           <div>
-            <img src={props.country.images.default} alt="" />
+            <img data-testid="flag" src={props.country.images.default} alt="" />
           </div>
-          <div>{props.country.name}</div>
+          <div data-testid="country_name">{props.country.name}</div>
         </div>
       </StyledCell>
       <TableCell align="center">

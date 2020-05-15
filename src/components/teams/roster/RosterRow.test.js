@@ -2,6 +2,7 @@ import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 import RosterRow from "./RosterRow";
+import { getByTestId } from "@testing-library/dom";
 
 let container = null;
 beforeEach(() => {
@@ -17,7 +18,6 @@ afterEach(() => {
 
 const test_props = {
   nick_name: "chuggen",
-  default: "https://img.abiosgaming.com/competitors/thumbnails/EHOME.png",
   first_name: "caspar",
   last_name: "wikström",
   country: {
@@ -29,16 +29,23 @@ const test_props = {
   roles: [3],
   id: 1337,
   images: {
-    default: "test_image",
+    default:
+      "https://img.abiosgaming.com/competitors/noone-dota2-ukr-vladimir-minenko.png",
   },
 };
 
-it("row has some variables", () => {
+it("Row has the correct variables", () => {
   act(() => {
     render(<RosterRow {...test_props} />, container);
   });
 
-  /* const opponent_name = getByTestId(container, "opponent-name");
-  const opponent_logo = getByTestId(container, "opponent-logo");
-  const date = getByTestId(container, "date");*/
+  const avatar = getByTestId(container, "avatar");
+  const flag = getByTestId(container, "flag");
+  const country_name = getByTestId(container, "country_name");
+
+  expect(country_name.textContent).toBe("sweden");
+  expect(avatar.getAttribute("src")).toBe(
+    "https://img.abiosgaming.com/competitors/noone-dota2-ukr-vladimir-minenko.png"
+  );
+  expect(flag.getAttribute("src")).toBe("test_country_image");
 });

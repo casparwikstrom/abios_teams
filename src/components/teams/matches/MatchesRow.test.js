@@ -23,7 +23,7 @@ const test_props = {
   score: "0 - 2",
 };
 
-it("row has some variables", () => {
+it("row renders the correct variables", () => {
   act(() => {
     render(<MatchesRow {...test_props} />, container);
   });
