@@ -11,7 +11,7 @@ const NavbarStyle = styled.div`
     width: 100%;
     background: #262730;
     border-bottom: 1px solid #21222b;
-    height: 70px;
+    height: 80px;
     /* color: white; */
     justify-content: space-evenly;
     align-items: center;
