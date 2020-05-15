@@ -26,7 +26,7 @@ const test_props = {
       default: "test_country_image",
     },
   },
-  roles: [3],
+  roles: [{ name: "3" }],
   id: 1337,
   images: {
     default:
@@ -42,10 +42,14 @@ it("Row has the correct variables", () => {
   const avatar = getByTestId(container, "avatar");
   const flag = getByTestId(container, "flag");
   const country_name = getByTestId(container, "country_name");
+  const role = getByTestId(container, "role");
 
+  expect(role.textContent).toBe("Offlane");
   expect(country_name.textContent).toBe("sweden");
   expect(avatar.getAttribute("src")).toBe(
     "https://img.abiosgaming.com/competitors/noone-dota2-ukr-vladimir-minenko.png"
   );
   expect(flag.getAttribute("src")).toBe("test_country_image");
+  /* const opponent_logo = getByTestId(container, "opponent-logo");
+  const date = getByTestId(container, "date");*/
 });

@@ -9,6 +9,7 @@ export function AbiosLoader() {
         color="#00BFFF"
         height={100}
         width={100}
+        padding-top={500}
         timeout={4000} //4 secs
       />
     </div>
