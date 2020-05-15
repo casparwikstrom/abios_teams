@@ -53,7 +53,7 @@ export default function RosterRow(props) {
         </div>
       </StyledCell>
       <TableCell align="center">
-        <div>
+        <div data-testid="role">
           {convertRole(props.roles.length > 0 ? props.roles[0].name : null)}
         </div>
       </TableCell>
